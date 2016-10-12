@@ -1,0 +1,28 @@
+/*Kolory
+#42BA85
+#000000
+#ffffff
+#394e7d
+*/
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+.zajawka {
+    height: 200px;
+    float: left;
+}
+
+.prawa {
+    float: right;
+}
+img.zajawka {
+    padding: 10px;
+}
+.logo{
+    height: 50px;
+    background-color: #42BA85;
+}
