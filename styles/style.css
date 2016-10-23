@@ -11,15 +11,21 @@ h1, h2, h3, h4, h5, h6 {
 p {
     font-family: 'Roboto', sans-serif;
 }
-.zajawka {
+.all {
+    width: 90%;
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.teaser {
     height: 200px;
     float: left;
 }
 
-.prawa {
+.right {
     float: right;
 }
-img.zajawka {
+img.teaser {
     padding: 10px;
 }
 .logo{
