@@ -7,7 +7,6 @@
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Raleway', sans-serif;
 }
-
 p {
     font-family: 'Roboto', sans-serif;
 }
@@ -17,18 +16,39 @@ main {
     margin-right: auto;
     margin-left: auto;
 }
-.teaser {
-    height: 200px;
-    float: left;
-}
-
-.right {
-    float: right;
-}
-img.teaser {
-    padding: 10px;
-}
 .logo{
     height: 50px;
     background-color: #42BA85;
+}
+.empty {
+    clear: both;
+}
+/*-----------------Teaser-----------------*/
+p.teaser {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    width: 75%;
+}
+section.teaser {
+    padding: 2%;
+}
+img.teaser {
+    max-width: 20%; /*jak ustawiam height to nie działa w %*/
+}
+img.teaser.left {
+    float: left;
+    margin-right: 1em;
+}
+img.teaser.right {
+    float: right;
+}
+p.teaser.right {
+    display: inline;
+    text-align: right;
+}
+p.teaser.left {
+    display: inline;
+    float: left;
+    text-align: left;
 }
