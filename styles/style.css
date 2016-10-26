@@ -24,12 +24,6 @@ main {
     clear: both;
 }
 /*-----------------Teaser-----------------*/
-p.teaser {
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    font-size: 1em;
-    width: 75%;
-}
 section.teaser {
     padding: 2%;
 }
@@ -42,13 +36,4 @@ img.teaser.left {
 }
 img.teaser.right {
     float: right;
-}
-p.teaser.right {
-    display: inline;
-    text-align: right;
-}
-p.teaser.left {
-    display: inline;
-    float: left;
-    text-align: left;
 }
