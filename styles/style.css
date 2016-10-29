@@ -15,6 +15,8 @@ main {
     max-width: 1000px;
     margin-right: auto;
     margin-left: auto;
+    min-height: 100%;
+
 }
 .logo{
     height: 50px;
@@ -26,6 +28,7 @@ main {
 /*-----------------Teaser-----------------*/
 section.teaser {
     padding: 2%;
+
 }
 img.teaser {
     max-width: 20%; /*jak ustawiam height to nie działa w %*/
@@ -107,4 +110,23 @@ input[type=submit]:focus
 -webkit-box-shadow: 0 0 15px 1px rgba(84,112,177,0.8);
 -moz-box-shadow: 0 0 15px 1px rgba(84,112,177,0.8);
 box-shadow: 0 0 15px 1px rgba(84,112,177,0.8);
+}
+
+/*-------------Team------------*/
+article.team {
+    margin-top: 20%;
+    margin-bottom: 20%;
+}
+
+section.team {
+    display: inline-block;
+    width: 45%;
+    text-align: center;
+    padding: 2%;
+    min-width: 200px;
+}
+
+.img-team {
+    border-radius: 50%;
+    width: 20%;
 }
