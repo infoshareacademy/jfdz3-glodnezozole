@@ -37,3 +37,74 @@ img.teaser.left {
 img.teaser.right {
     float: right;
 }
+
+/*----------------- Invitation -----------------*/
+
+.invite
+{
+
+    margin-left: auto;      /*dopasować auto margin do warunków po wyskalowaniu strony*/
+    margin-right: auto;
+    margin-top: 20%;
+    margin-bottom:20%;
+    border-radius: 5px;
+    padding: 5%;
+   /* height: 55%; */
+    min-height: 100px;
+    width: 60%;    /*tymczasowy*/
+    text-align: center;
+    background-color:#6ccba1;
+    -webkit-box-shadow: 10px 10px 21px 1px rgba(105,147,128,0.8);
+    -moz-box-shadow: 10px 10px 21px 1px rgba(105,147,128,0.8);
+    box-shadow: 10px 10px 21px 1px rgba(105,147,128,0.8);
+
+}
+
+input[type=email]
+{
+    width: 300px;   /*dopasowac w % po wyskalowaniu*/
+    color: #666;
+    background-color: #f2f2f2;
+    border: 2px solid #e0e0e0;
+    border-radius: 5px;
+    font-size: 3vh;   /* !! input nie dziedziczy rozmiaru fonta */ /*zastanowic sie nad znormalizowaniem H1 itp w oparciu o "vh" lub "vw" aby strona miała odpowiedni rozmiar czcionki na innych urządzeniach. Dodatkowo wystylizować np za pośrednictwem SPAN treść okienka */
+    padding: 1%;
+    margin-top: 2vw;
+    outline: none;
+}
+
+input[type=email]:focus
+{
+    -webkit-box-shadow: 0 0 15px 1px rgba(105,147,128,0.8);
+    -moz-box-shadow: 0 0 15px 1px rgba(105,147,128,0.8);
+    box-shadow: 0 0 15px 1px rgba(105,147,128,0.8);
+    border: 2px solid #b2d4b2;
+    background-color: #e9f3f9;
+}
+
+input[type=submit]
+{
+    min-width: 230px;      /*na tych zasadach  strona mająca węższą przestrzeń (mniejszą szerokość) wpuszcza guzik obok pola na adres */
+    color: #f8f8f8;
+    background-color: #5470b1;
+    font-size: 3vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    padding: 1%;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type=submit]:hover
+{
+    background-color:#2e61d7;
+}
+
+input[type=submit]:focus
+{
+-webkit-box-shadow: 0 0 15px 1px rgba(84,112,177,0.8);
+-moz-box-shadow: 0 0 15px 1px rgba(84,112,177,0.8);
+box-shadow: 0 0 15px 1px rgba(84,112,177,0.8);
+}
