@@ -143,9 +143,10 @@ box-shadow: 0 0 15px 1px rgba(84,112,177,0.8);
 /*-------------Team------------*/
 
 article.team {
-    height: 70vh;
 
-    padding-top: 20vh;
+
+    padding-top: 10vh;
+    padding-bottom: 10vh;
 
 
 }
@@ -160,11 +161,12 @@ section.team {
 
 .img-team {
     border-radius: 50%;
-    width: 20%;
+    width: 35%;
 }
 
 footer {
     height: 50px;
     background-color: #42BA85;
     width: 100%;
+    bottom: 0;
 }
