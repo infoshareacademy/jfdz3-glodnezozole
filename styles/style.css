@@ -4,6 +4,15 @@
 #ffffff
 #394e7d
 */
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+
+}
+
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Raleway', sans-serif;
 }
@@ -21,13 +30,29 @@ main {
 .logo{
     height: 50px;
     background-color: #42BA85;
+
+}
+header {
+    position: fixed;
+    display: block;
+    width: 100%;
 }
 .empty {
     clear: both;
+
 }
+
 /*-----------------Teaser-----------------*/
+
 section.teaser {
     padding: 2%;
+
+}
+article.teaser {
+
+    height: 80vh;
+    padding-bottom: 5vh;
+    padding-top: 15vh;
 
 }
 img.teaser {
@@ -42,8 +67,15 @@ img.teaser.right {
 }
 
 /*----------------- Invitation -----------------*/
+article.invite  {
+    height: 80vh;
+    padding-bottom: 10vh%;
+    padding-top: 10vh;
 
-.invite
+}
+
+
+div.invite
 {
 
     margin-left: auto;      /*dopasować auto margin do warunków po wyskalowaniu strony*/
@@ -113,9 +145,13 @@ box-shadow: 0 0 15px 1px rgba(84,112,177,0.8);
 }
 
 /*-------------Team------------*/
+
 article.team {
-    margin-top: 20%;
-    margin-bottom: 20%;
+    height: 70vh;
+
+    padding-top: 20vh;
+
+
 }
 
 section.team {
@@ -129,4 +165,10 @@ section.team {
 .img-team {
     border-radius: 50%;
     width: 20%;
+}
+
+footer {
+    height: 50px;
+    background-color: #42BA85;
+    width: 100%;
 }
