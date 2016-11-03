@@ -42,6 +42,14 @@ header {
 
 }
 /*-----------------Teaser-----------------*/
+td.teaser {
+    width: auto;
+}
+h1.teaser {
+    padding: 8vh;
+    margin-top: auto;
+    display: inline-table;
+}
 section.teaser {
     padding: 2%;
 
@@ -53,9 +61,7 @@ article.teaser {
     padding-top: 15vh;
 
 }
-img.teaser {
-    max-width: 20%; /*jak ustawiam height to nie działa w %*/
-}
+
 img.teaser.left {
     float: left;
     margin-right: 1em;
