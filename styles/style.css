@@ -27,20 +27,29 @@ main {
     min-height: 100%;
 
 }
-.logo{
-    height: 50px;
-    background-color: #42BA85;
 
-}
-header {
-    position: fixed;
-    display: block;
-    width: 100%;
-}
 .empty {
     clear: both;
 
 }
+
+/*----------------- menu -----------------*/
+
+header
+{
+    position: fixed;
+    display: block;
+    width: 100%;
+    /* tu obramowanie spodnie lub cień - albo to i to */
+}
+.logo
+{
+   /* height: 50px; do usunięcia za chwile */
+    padding-top: 2px;
+    padding-left: 2px;
+    background-color: #42BA85;
+}
+
 /*-----------------Teaser-----------------*/
 section.teaser {
     padding: 2%;
@@ -75,7 +84,6 @@ article.invite  {
 
 div.invite
 {
-
     margin: 20% auto;
     border-radius: 5px;
     padding: 5%;
@@ -87,7 +95,6 @@ div.invite
     -webkit-box-shadow: 10px 10px 21px 1px rgba(105,147,128,0.8);
     -moz-box-shadow: 10px 10px 21px 1px rgba(105,147,128,0.8);
     box-shadow: 10px 10px 21px 1px rgba(105,147,128,0.8);
-
 }
 
 input[type=email]
