@@ -33,21 +33,43 @@ main {
 
 }
 
-/*----------------- menu -----------------*/
+/*----------------- Navigate -----------------*/
 
 header
 {
     position: fixed;
     display: block;
     width: 100%;
-    /* tu obramowanie spodnie lub cień - albo to i to */
+    /* tu obramowanie dolne lub cień - albo to i to */
 }
 .logo
 {
-   /* height: 50px; do usunięcia za chwile */
+    max-height: 60px;
     padding-top: 2px;
     padding-left: 2px;
     background-color: #42BA85;
+}
+
+.navbar
+{
+    top: 0;
+    left: 20%;
+    z-index: 100;
+}
+
+
+
+ul
+{
+    margin:0;
+    padding:0;
+    list-style-type:none;
+    height: 35px;
+    line-height:200%;
+}
+ul>li
+{
+    float:left;
 }
 
 /*-----------------Teaser-----------------*/
