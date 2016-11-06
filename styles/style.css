@@ -8,11 +8,7 @@ html, body {
     margin: 0;
     padding: 0;
     border: 0;
-
-
 }
-
-
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Raleway', sans-serif;
 }
@@ -25,12 +21,10 @@ main {
     margin-right: auto;
     margin-left: auto;
     min-height: 100%;
-
 }
 .logo{
     height: 50px;
     background-color: #42BA85;
-
 }
 header {
     position: fixed;
@@ -39,30 +33,77 @@ header {
 }
 .empty {
     clear: both;
-
 }
 /*-----------------Teaser-----------------*/
-section.teaser {
-    padding: 2%;
-
-}
 article.teaser {
-
     height: 80vh;
     padding-bottom: 5vh;
     padding-top: 15vh;
-
 }
-img.teaser {
-    max-width: 20%; /*jak ustawiam height to nie działa w %*/
+@media (min-width: 523px) {
+    h1.teaser.piggy {
+        height: 20vh;
+        padding-left: 25vh;
+        display: flex;
+        align-items: center;
+        background-image: url("../img/skarbonka.png");
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 20vh;
+    }
+    h1.teaser.chart {
+        height: 20vh;
+        padding-right: 25vh;
+        display: flex;
+        align-items: center;
+        background-image: url("../img/wykres.png");
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: 20vh;
+    }
+    h1.teaser.dollarpot {
+        height: 20vh;
+        padding-left: 25vh;
+        display: flex;
+        align-items: center;
+        background-image: url("../img/wzrost.png");
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 17vh;
+    }
 }
-img.teaser.left {
-    float: left;
-    margin-right: 1em;
-}
-img.teaser.right {
-    float: right;
-}
+@media (max-width: 522px) {
+    h1.teaser.piggy {
+        padding-top: 14vh;
+        font-size: small;
+        display: flex;
+        align-items: center;
+        background-image: url("../img/skarbonka.png");
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 12vh;
+    }
+    h1.teaser.chart {
+        padding-top: 14vh;
+        font-size: small;
+        display: flex;
+        align-items: center;
+        background-image: url("../img/wykres.png");
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 12vh;
+    }
+    h1.teaser.dollarpot {
+        padding-top: 14vh;
+        font-size: small;
+        display: flex;
+        align-items: center;
+        background-image: url("../img/wzrost.png");
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 12vh;
+    }
+ }
 
 /*----------------- Invitation -----------------*/
 article.invite  {
