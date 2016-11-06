@@ -12,7 +12,7 @@ html, body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Raleway', sans-serif;
 }
-p {
+p, span, a, li {
     font-family: 'Roboto', sans-serif;
 }
 main {
@@ -204,10 +204,33 @@ section.team {
     border-radius: 50%;
     width: 35%;
 }
+/*-------------Rules------------*/
+section#rules > ol {
+    list-style-type: upper-roman;
+}
+
+/*-------------Footer------------*/
 
 footer {
-    height: 50px;
+    height: 5vh;
     background-color: #42BA85;
     width: 100%;
     bottom: 0;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+span.footer {
+    padding: 0 10%;
+}
+a.footer {
+    padding: 0 10%;
+    color: black;
+}
+a.footer:hover {
+    font-weight: bold;
+    color: black;
+}
+a.footer:visited{
+    color: black;
 }
