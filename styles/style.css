@@ -209,6 +209,18 @@ section#rules > ol {
     list-style-type: upper-roman;
 }
 
+#privacy_policy:not(:target), #rules:not(:target) {
+    display: none;
+}
+#privacy_policy:target, #rules:target {
+    display: block;
+}
+a#rules:not(:target) {
+    display: none;
+}
+a#rules:target {
+    display: block;
+}
 /*-------------Footer------------*/
 
 footer {
