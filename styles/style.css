@@ -107,11 +107,11 @@ input[type=email] {
   outline: none; }
 
 input[type=email]:focus {
+  border: 2px solid #b2d4b2;
+  background-color: #e9f3f9;
   -webkit-box-shadow: 0 0 15px 1px rgba(105, 147, 128, 0.8);
   -moz-box-shadow: 0 0 15px 1px rgba(105, 147, 128, 0.8);
-  box-shadow: 0 0 15px 1px rgba(105, 147, 128, 0.8);
-  border: 2px solid #b2d4b2;
-  background-color: #e9f3f9; }
+  box-shadow: 0 0 15px 1px rgba(105, 147, 128, 0.8); }
 
 input[type=submit] {
   min-width: 180px;

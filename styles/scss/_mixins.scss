@@ -4,5 +4,22 @@
 //*-----------------Teaser-----------------*/
 
 //*----------------- Invitation -----------------*/
+@mixin invite ($convex)
+{
+  -webkit-box-shadow: $convex;
+  -moz-box-shadow: $convex;
+  box-shadow: $convex;
+}
+@mixin email-input($email)
+{
+  -webkit-box-shadow: $email;
+  -moz-box-shadow: $email;
+  box-shadow: $email;
+}
+@mixin submit-input($submit)
+{  -webkit-box-shadow: $submit;
+  -moz-box-shadow: $submit;
+  box-shadow: $submit;
+}
 
 //*-------------Team------------*/
