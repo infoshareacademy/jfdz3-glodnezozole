@@ -10,7 +10,7 @@ html, body {
   padding: 0;
   border: 0; }
 
-h1, h2, h3, h4, h5, h6, nav ul a {
+h1, h2, h3, h4, h5, h6, nav.navbar {
   font-family: 'Raleway', sans-serif; }
 
 p {
@@ -31,52 +31,80 @@ header {
   position: fixed;
   display: block;
   width: 100%;
-  -webkit-box-shadow: 0px 1px 1px 0px #394e7d;
-  -moz-box-shadow: 0px 1px 1px 0px #394e7d;
-  box-shadow: 0px 1px 1px 0px #394e7d; }
+  -webkit-box-shadow: 0 1px 1px 0 #394e7d;
+  -moz-box-shadow: 0 1px 1px 0 #394e7d;
+  box-shadow: 0 1px 1px 0 #394e7d; }
 
 nav.navbar {
   width: 90%;
   max-width: 1000px;
   margin: 0 auto;
+  font-weight: 700;
   background-size: contain;
   background-position: left top;
   background-image: url(../img/logo.png);
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  list-style-type: none; }
 
-article.logo {
+article.bar {
   padding: 2px;
   background-color: #42BA85; }
 
-nav ul {
-  margin: 0;
-  padding: 0 0 0 33%;
-  /*ten padding 33% to chyba powinienem wpisa─ç tylko dla wersji MQ*/
-  list-style-type: none;
-  line-height: 220%;
-  text-align: end;
-  font-weight: 700; }
+input[type="checkbox"] {
+  display: none; }
 
-nav ul > li {
-  display: inline-flex;
-  border-right: 2px  dashed #2d805c;
-  padding-right: 3px; }
+@media (min-width: 641px) {
+  nav ul {
+    margin: 0;
+    line-height: 220%;
+    text-align: end; }
 
-nav ul > li:first-child {
-  border-left: 2px  dashed #2d805c;
-  padding-left: 3px; }
+  nav ul > li {
+    display: inline-flex;
+    border-right: 2px dashed #2d805c;
+    padding-right: 2px; }
 
-nav ul a {
-  width: 100px;
-  /*poda─ç legalnie wielkosci w px, ale uzaleznic to od mediaQ, tak aby na ekranach ma┼éych by┼éo z┼éo┼╝one */
-  text-decoration: none;
-  color: #2d3d62;
-  text-align: center; }
+  nav ul > li:first-child {
+    border-left: 2px dashed #2d805c;
+    padding-left: 2px;
+    margin-left: 33%; }
 
-nav ul a:hover {
-  background-color: #394e7d;
-  color: #fff; }
+  nav ul a {
+    width: 100px;
+    text-decoration: none;
+    color: #2d3d62;
+    text-align: center; }
 
+  nav ul a:hover {
+    background-color: #394e7d;
+    color: #fff; } }
+@media (max-width: 640px) {
+  /*dopisac regule media o ekranie*/
+  input[type="checkbox"] {
+    display: inline; }
+
+  nav {
+    display: none; }
+
+  nav ul > li {
+    list-style-type: none;
+    /*wystylizowac guziki*/ }
+
+  input[type="checkbox"]:checked + nav {
+    display: block; }
+
+  nav ul a {
+    display: block;
+    padding: 1%;
+    width: 100px;
+    text-decoration: none;
+    color: #fff; }
+
+  nav ul a:hover {
+    color: #394e7d; }
+
+  nav.navbar {
+    background-image: none; } }
 /*-----------------Teaser-----------------*/
 section.teaser {
   padding: 2%; }
@@ -116,7 +144,7 @@ div.invite {
   -moz-box-shadow: 10px 10px 21px 1px rgba(105, 147, 128, 0.8);
   box-shadow: 10px 10px 21px 1px rgba(105, 147, 128, 0.8); }
 
-input[type=email] {
+input[type="email"] {
   width: 66%;
   min-width: 180px;
   color: #666;
@@ -128,14 +156,14 @@ input[type=email] {
   margin-top: 2vw;
   outline: none; }
 
-input[type=email]:focus {
+input[type="email"]:focus {
   border: 2px solid #b2d4b2;
   background-color: #e9f3f9;
   -webkit-box-shadow: 0 0 15px 1px rgba(105, 147, 128, 0.8);
   -moz-box-shadow: 0 0 15px 1px rgba(105, 147, 128, 0.8);
   box-shadow: 0 0 15px 1px rgba(105, 147, 128, 0.8); }
 
-input[type=submit] {
+input[type="submit"] {
   min-width: 180px;
   color: #f8f8f8;
   background-color: #5470b1;
@@ -148,10 +176,10 @@ input[type=submit] {
   cursor: pointer;
   outline: none; }
 
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: #2e61d7; }
 
-input[type=submit]:focus {
+input[type="submit"]:focus {
   -webkit-box-shadow: 0 0 15px 1px rgba(84, 112, 177, 0.8);
   -moz-box-shadow: 0 0 15px 1px rgba(84, 112, 177, 0.8);
   box-shadow: 0 0 15px 1px rgba(84, 112, 177, 0.8); }

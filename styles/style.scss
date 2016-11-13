@@ -18,7 +18,7 @@ html, body {
 }
 
 
-h1, h2, h3, h4, h5, h6, nav ul a  {
+h1, h2, h3, h4, h5, h6, nav.navbar  {
   font-family: 'Raleway', sans-serif;
 }
 p {
@@ -44,71 +44,108 @@ header
   position: fixed;
   display: block;
   width: 100%;
-  @include top( 0px 1px 1px 0px $A_logo);
-//tu obramowanie dolne lub cień - albo to i to
+  @include top( 0 1px 1px 0 $A_logo);
+
 }
 
 nav.navbar
 {
   @include dimension;
   margin: 0 auto;
+  font-weight: 700;
   background-size: contain;
   background-position: left top;
   background-image: url(../img/logo.png);
   background-repeat: no-repeat;
- //min-height: 50px; sprawdzić zapotrzebowanie po wprowadzeniu mediaQ
- // padding-bottom:10px;
+  list-style-type:none;
+
 }
-article.logo
+article.bar
 {
-  // max-height: 60px; sprawdzić zapotrzebowanie po wprowadzeniu mediaQ
   padding: 2px;
   background-color: $bar_bg;
 }
 
-
-//{
-//  top: 0;     /*czy ta linia jest potrzebna */
-//  left: 20%; /*czy ta linia jest potrzebna */
-//  z-index: 100; /*czy ta linia jest potrzebna */
-//}
-
-nav ul
-{
-  margin:0;
-  padding: 0 0 0 33%; /*ten padding 33% to chyba powinienem wpisać tylko dla wersji MQ*/
-  list-style-type:none;
-  line-height:220%;
-  text-align: end;
-  font-weight: 700;
-  //height: 35px; najprawdopodobniej będzie usunięte
-}
-nav ul>li
-{
-  display:inline-flex;
-  border-right: 2px  dashed #2d805c;
-  padding-right: 3px;
-}
-nav ul>li:first-child
-{
-  border-left: 2px  dashed #2d805c;
-  padding-left: 3px;
+input[type="checkbox"] {
+  display: none;
 }
 
-nav ul a
+@media (min-width:641px)
 {
-  width:100px; /*podać legalnie wielkosci w px, ale uzaleznic to od mediaQ, tak aby na ekranach małych było złożone */
-  text-decoration: none;
-  color: #2d3d62;
-  text-align: center;
-  //text-shadow:0 0 0.0001em;
+
+  nav ul {
+    margin: 0;
+    line-height: 220%;
+    text-align: end;
+  }
+  nav ul > li {
+    display: inline-flex;
+    border-right: 2px dashed #2d805c;
+    padding-right: 2px;
+
+  }
+  nav ul > li:first-child {
+    border-left: 2px dashed #2d805c;
+    padding-left: 2px;
+    margin-left:33%;
+  }
+
+  nav ul a {
+    width: 100px;
+    text-decoration: none;
+    color: #2d3d62;
+    text-align: center;
+
+  }
+
+  nav ul a:hover {
+    background-color: $A_logo;
+    color: #fff;
+  }
+
+
 }
 
-nav ul a:hover
-{
-  background-color: $A_logo;
-  color:#fff;
+@media (max-width:640px)
+{ /*dopisac regule media o ekranie*/
+  input[type="checkbox"] {
+    display: inline;
 
+  }
+
+  nav {
+    display: none;
+  }
+
+  nav ul > li {
+    list-style-type: none;
+    /*wystylizowac guziki*/
+  }
+
+
+
+
+  input[type="checkbox"]:checked + nav {
+    display: block;
+
+  }
+
+  nav ul a
+  {
+    display: block;
+    padding: 1%;
+    width: 100px;
+    text-decoration: none;
+    color: #fff;
+  }
+  nav ul a:hover {
+    color:$A_logo;
+  }
+
+  nav.navbar
+  {
+    background-image: none;
+  }
 }
 /*-----------------Teaser-----------------*/
 section.teaser {
@@ -155,7 +192,7 @@ div.invite
 
 }
 
-input[type=email]
+input[type="email"]
 {
   width: 66%;
   min-width: 180px;
@@ -169,14 +206,14 @@ input[type=email]
   outline: none;
 }
 
-input[type=email]:focus
+input[type="email"]:focus
 {
   border: 2px solid #b2d4b2;
   background-color: #e9f3f9;
   @include email-input(0 0 15px 1px rgba(105,147,128,0.8));
 }
 
-input[type=submit]
+input[type="submit"]
 {
   min-width: 180px;
   color: #f8f8f8;
@@ -191,12 +228,12 @@ input[type=submit]
   outline: none;
 }
 
-input[type=submit]:hover
+input[type="submit"]:hover
 {
   background-color:#2e61d7;
 }
 
-input[type=submit]:focus
+input[type="submit"]:focus
 {
   @include  submit-input(0 0 15px 1px rgba(84,112,177,0.8));
 }
