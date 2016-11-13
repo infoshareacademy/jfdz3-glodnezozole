@@ -10,7 +10,7 @@ html, body {
   padding: 0;
   border: 0; }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, nav ul a {
   font-family: 'Raleway', sans-serif; }
 
 p {
@@ -30,7 +30,10 @@ main {
 header {
   position: fixed;
   display: block;
-  width: 100%; }
+  width: 100%;
+  -webkit-box-shadow: 0px 1px 1px 0px #394e7d;
+  -moz-box-shadow: 0px 1px 1px 0px #394e7d;
+  box-shadow: 0px 1px 1px 0px #394e7d; }
 
 nav.navbar {
   width: 90%;
@@ -47,13 +50,32 @@ article.logo {
 
 nav ul {
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 33%;
+  /*ten padding 33% to chyba powinienem wpisa─ç tylko dla wersji MQ*/
   list-style-type: none;
-  line-height: 250%;
-  text-align: end; }
+  line-height: 220%;
+  text-align: end;
+  font-weight: 700; }
 
 nav ul > li {
-  display: inline-flex; }
+  display: inline-flex;
+  border-right: 2px  dashed #2d805c;
+  padding-right: 3px; }
+
+nav ul > li:first-child {
+  border-left: 2px  dashed #2d805c;
+  padding-left: 3px; }
+
+nav ul a {
+  width: 100px;
+  /*poda─ç legalnie wielkosci w px, ale uzaleznic to od mediaQ, tak aby na ekranach ma┼éych by┼éo z┼éo┼╝one */
+  text-decoration: none;
+  color: #2d3d62;
+  text-align: center; }
+
+nav ul a:hover {
+  background-color: #394e7d;
+  color: #fff; }
 
 /*-----------------Teaser-----------------*/
 section.teaser {

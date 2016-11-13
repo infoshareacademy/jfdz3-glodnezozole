@@ -1,6 +1,19 @@
 // _mixins.scss
-//*----------------- Navigate -----------------*/
 
+//* Main
+@mixin dimension
+{
+  width: 90%;
+  max-width: 1000px;
+}
+
+//*----------------- Navigate -----------------*/
+@mixin top ($top)
+{
+  -webkit-box-shadow: $top;
+  -moz-box-shadow: $top;
+  box-shadow: $top;
+}
 //*-----------------Teaser-----------------*/
 
 //*----------------- Invitation -----------------*/

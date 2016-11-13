@@ -18,15 +18,14 @@ html, body {
 }
 
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, nav ul a  {
   font-family: 'Raleway', sans-serif;
 }
 p {
   font-family: 'Roboto', sans-serif;
 }
 main {
-  width: 90%;
-  max-width: 1000px;
+  @include dimension;
   margin-right: auto;
   margin-left: auto;
   min-height: 100%;
@@ -45,26 +44,26 @@ header
   position: fixed;
   display: block;
   width: 100%;
+  @include top( 0px 1px 1px 0px $A_logo);
 //tu obramowanie dolne lub cień - albo to i to
 }
 
 nav.navbar
 {
-  width: 90%;
-  max-width: 1000px;
+  @include dimension;
   margin: 0 auto;
   background-size: contain;
   background-position: left top;
   background-image: url(../img/logo.png);
   background-repeat: no-repeat;
  //min-height: 50px; sprawdzić zapotrzebowanie po wprowadzeniu mediaQ
-
+ // padding-bottom:10px;
 }
 article.logo
 {
   // max-height: 60px; sprawdzić zapotrzebowanie po wprowadzeniu mediaQ
   padding: 2px;
-  background-color: #42BA85;
+  background-color: $bar_bg;
 }
 
 
@@ -77,18 +76,40 @@ article.logo
 nav ul
 {
   margin:0;
-  padding:0;
+  padding: 0 0 0 33%; /*ten padding 33% to chyba powinienem wpisać tylko dla wersji MQ*/
   list-style-type:none;
-  line-height:250%;
+  line-height:220%;
   text-align: end;
+  font-weight: 700;
   //height: 35px; najprawdopodobniej będzie usunięte
 }
 nav ul>li
 {
   display:inline-flex;
-
+  border-right: 2px  dashed #2d805c;
+  padding-right: 3px;
+}
+nav ul>li:first-child
+{
+  border-left: 2px  dashed #2d805c;
+  padding-left: 3px;
 }
 
+nav ul a
+{
+  width:100px; /*podać legalnie wielkosci w px, ale uzaleznic to od mediaQ, tak aby na ekranach małych było złożone */
+  text-decoration: none;
+  color: #2d3d62;
+  text-align: center;
+  //text-shadow:0 0 0.0001em;
+}
+
+nav ul a:hover
+{
+  background-color: $A_logo;
+  color:#fff;
+
+}
 /*-----------------Teaser-----------------*/
 section.teaser {
   padding: 2%;
@@ -206,7 +227,7 @@ section.team {
 
 footer {
   height: 50px;
-  background-color: #42BA85;
+  background-color: $bar_bg;
   width: 100%;
   bottom: 0;
 }
