@@ -53,7 +53,7 @@ article.bar {
 input[type="checkbox"] {
   display: none; }
 
-@media (min-width: 641px) {
+@media screen and (min-width: 801px) {
   nav ul {
     margin: 0;
     line-height: 220%;
@@ -66,11 +66,10 @@ input[type="checkbox"] {
 
   nav ul > li:first-child {
     border-left: 2px dashed #2d805c;
-    padding-left: 2px;
-    margin-left: 33%; }
+    padding-left: 2px; }
 
   nav ul a {
-    width: 100px;
+    width: 99px;
     text-decoration: none;
     color: #2d3d62;
     text-align: center; }
@@ -78,8 +77,7 @@ input[type="checkbox"] {
   nav ul a:hover {
     background-color: #394e7d;
     color: #fff; } }
-@media (max-width: 640px) {
-  /*dopisac regule media o ekranie*/
+@media screen and (max-width: 800px) {
   input[type="checkbox"] {
     display: inline; }
 
@@ -95,10 +93,11 @@ input[type="checkbox"] {
 
   nav ul a {
     display: block;
-    padding: 1%;
-    width: 100px;
+    padding-bottom: 1%;
+    width: 100%;
     text-decoration: none;
-    color: #fff; }
+    color: #fff;
+    text-align: center; }
 
   nav ul a:hover {
     color: #394e7d; }
