@@ -105,6 +105,7 @@ input[type="checkbox"] {
 
 @media screen and (max-width:800px)
 {
+
   input[type="checkbox"] {
     display: inline;
 
@@ -151,6 +152,7 @@ input[type="checkbox"] {
     @include m-b-s(inset 1px 1px 3px 0 rgba(0,0,0,0.45));
     content: '\2227';
   }
+
   nav ul a
   {
 
