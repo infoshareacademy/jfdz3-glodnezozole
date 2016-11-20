@@ -9,8 +9,13 @@ html, body {
     padding: 0;
     border: 0;
 }
+h1 {
+    font-size: 2em;
+}
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+}
 }
 p, span, a, li {
     font-family: 'Roboto', sans-serif;
@@ -36,7 +41,6 @@ header {
 }
 /*-----------------Teaser-----------------*/
 article.teaser {
-    height: 80vh;
     padding-bottom: 5vh;
     padding-top: 15vh;
 }
@@ -107,7 +111,6 @@ article.teaser {
 
 /*----------------- Invitation -----------------*/
 article.invite  {
-    height: 80vh;
     padding-bottom: 10vh;
     padding-top: 10vh;
 
@@ -220,14 +223,20 @@ ol.rules {
     background: #fff;
     text-align: justify;
     margin: auto;
+
 }
 
 section#rules > ol {
     list-style-type: upper-roman;
 }
+
+.cross_btn {
+    position: relative;
+}
 a.rules {
-    margin-top: -4%;
-    float: right;
+    position: absolute;
+    top: 3%;
+    right: 16%;
 }
 
 #privacy_policy:not(:target), #rules:not(:target) {
@@ -242,7 +251,6 @@ a.rules {
 /*-------------Footer------------*/
 
 footer {
-    height: 5vh;
     background-color: #42BA85;
     width: 100%;
     bottom: 0;
