@@ -183,6 +183,33 @@ input[type=submit]:focus
 -moz-box-shadow: 0 0 15px 1px rgba(84,112,177,0.8);
 box-shadow: 0 0 15px 1px rgba(84,112,177,0.8);
 }
+/*-------------Function List --------- */
+
+article.functionlist {
+
+    padding-top: 1vh;
+    padding-bottom: 5vh;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+article.functionlist {
+    font-size: 135%;
+}
+section.functionlist h1:first-letter {
+    color: #42BA85;
+    font-size: 200%;
+
+}
+section.functionlist p {
+    padding-left: 40%;
+}
+
+h1.functionlist {
+    text-align: center;
+
+}
+
 
 /*-------------Team------------*/
 
