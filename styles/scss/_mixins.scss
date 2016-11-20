@@ -14,6 +14,20 @@
   -moz-box-shadow: $top;
   box-shadow: $top;
 }
+@mixin menu_button
+{
+  font-weight:bold;
+  padding: 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+  @mixin m-b-s ($menu-b-sh)
+  {
+  -webkit-box-shadow: $menu-b-sh;
+  -moz-box-shadow: $menu-b-sh;
+  box-shadow: $menu-b-sh;
+  }
 //*-----------------Teaser-----------------*/
 
 //*----------------- Invitation -----------------*/

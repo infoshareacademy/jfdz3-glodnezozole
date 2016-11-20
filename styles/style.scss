@@ -7,8 +7,6 @@
 #ffffff
 #394e7d
 */
-//* {border: black 1px solid;}
-
 html, body {
   margin: 0;
   padding: 0;
@@ -92,7 +90,7 @@ input[type="checkbox"] {
   nav ul a {
     width: 99px;
     text-decoration: none;
-    color: #2d3d62;
+    color: $B_logo;
     text-align: center;
 
   }
@@ -118,22 +116,47 @@ input[type="checkbox"] {
 
   nav ul > li {
     list-style-type: none;
-    /*wystylizowac guziki*/
   }
-
-
-
+  nav ul{
+    padding:0;
+    margin-top: 0;
+    margin-bottom: 2px;
+  }
 
   input[type="checkbox"]:checked + nav {
     display: block;
-
   }
 
+  article.bar {
+    min-height: 36px;
+  }
+
+  #c1:before
+  {
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    color: $B_logo;
+    background-color: white;
+    content: '\2228';
+    @include menu_button;
+    @include m-b-s(inset 1px 1px 3px 0 rgba(0,0,0,0.55));
+  }
+
+  #c1:checked:before
+  {
+    @include menu_button;
+    @include m-b-s(inset 1px 1px 3px 0 rgba(0,0,0,0.45));
+    content: '\2227';
+  }
   nav ul a
   {
 
     display: block;
     padding-bottom: 1%;
+    padding-top: 1%;
     width: 100%;
     text-decoration: none;
     color: #fff;
