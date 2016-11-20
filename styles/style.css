@@ -57,7 +57,7 @@ input[type="checkbox"] {
   nav ul {
     margin: 0;
     line-height: 220%;
-    text-align: end; }
+    text-align: right; }
 
   nav ul > li {
     display: inline-flex;
