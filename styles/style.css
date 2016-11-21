@@ -1,74 +1,243 @@
-/*
-Error: Undefined mixin 'dimension'.
-        on line 24 of style.scss, in `dimension'
-        from line 24 of style.scss
-
-19: }
-20: p {
-21:   font-family: 'Roboto', sans-serif;
-22: }
-23: main {
-24:   @include dimension;
-25:   margin-right: auto;
-26:   margin-left: auto;
-27:   min-height: 100%;
-28: 
-29: }
-
-Backtrace:
-style.scss:24:in `dimension'
-style.scss:24
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:98:in `block in with_mixin'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:98:in `with_mixin'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:349:in `visit_mixin'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `map'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `map'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:159:in `visit'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:36:in `css_tree'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin.rb:82:in `update_stylesheets'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:51:in `process_result'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/base.rb:52:in `parse'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/base.rb:19:in `parse!'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/bin/scss:13:in `<top (required)>'
-/usr/local/bin/scss:23:in `load'
-/usr/local/bin/scss:23:in `<main>'
+@charset "UTF-8";
+/*Kolory
+#42BA85
+#000000
+#ffffff
+#394e7d
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined mixin 'dimension'.\A         on line 24 of style.scss, in `dimension'\A         from line 24 of style.scss\A \A 19: }\A 20: p {\A 21:   font-family: 'Roboto', sans-serif;\A 22: }\A 23: main {\A 24:   @include dimension;\A 25:   margin-right: auto;\A 26:   margin-left: auto;\A 27:   min-height: 100%;\A 28: \A 29: }"; }
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+h1, h2, h3, h4, h5, h6, nav.navbar {
+  font-family: 'Raleway', sans-serif; }
+
+p {
+  font-family: 'Roboto', sans-serif; }
+
+main {
+  width: 90%;
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  min-height: 100%; }
+
+.empty {
+  clear: both; }
+
+/*----------------- Navigate -----------------*/
+header {
+  position: fixed;
+  display: block;
+  width: 100%;
+  -webkit-box-shadow: 0 1px 1px 0 #394e7d;
+  -moz-box-shadow: 0 1px 1px 0 #394e7d;
+  box-shadow: 0 1px 1px 0 #394e7d; }
+
+nav.navbar {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-weight: 700;
+  background-size: contain;
+  background-position: left top;
+  background-image: url(../img/logo.png);
+  background-repeat: no-repeat;
+  list-style-type: none; }
+
+article.bar {
+  padding: 2px;
+  background-color: #42BA85; }
+
+input[type="checkbox"] {
+  display: none; }
+
+@media screen and (min-width: 801px) {
+  nav ul {
+    margin: 0;
+    line-height: 220%;
+    text-align: right; }
+
+  nav ul > li {
+    display: inline-flex;
+    border-right: 2px dashed #2d805c;
+    padding-right: 2px; }
+
+  nav ul > li:first-child {
+    border-left: 2px dashed #2d805c;
+    padding-left: 2px; }
+
+  nav ul a {
+    width: 99px;
+    text-decoration: none;
+    color: #2d3d62;
+    text-align: center; }
+
+  nav ul a:hover {
+    background-color: #394e7d;
+    color: #fff; } }
+@media screen and (max-width: 800px) {
+  input[type="checkbox"] {
+    display: inline; }
+
+  nav {
+    display: none; }
+
+  nav ul > li {
+    list-style-type: none; }
+
+  nav ul {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 2px; }
+
+  input[type="checkbox"]:checked + nav {
+    display: block; }
+
+  article.bar {
+    min-height: 36px; }
+
+  #c1:before {
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    color: #2d3d62;
+    background-color: white;
+    content: '\2228';
+    font-weight: bold;
+    padding: 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 1px 1px 3px 0 rgba(0, 0, 0, 0.55);
+    -moz-box-shadow: inset 1px 1px 3px 0 rgba(0, 0, 0, 0.55);
+    box-shadow: inset 1px 1px 3px 0 rgba(0, 0, 0, 0.55); }
+
+  #c1:checked:before {
+    font-weight: bold;
+    padding: 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 1px 1px 3px 0 rgba(0, 0, 0, 0.45);
+    -moz-box-shadow: inset 1px 1px 3px 0 rgba(0, 0, 0, 0.45);
+    box-shadow: inset 1px 1px 3px 0 rgba(0, 0, 0, 0.45);
+    content: '\2227'; }
+
+  nav ul a {
+    display: block;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+    text-align: center; }
+
+  nav ul a:hover {
+    color: #394e7d; }
+
+  nav.navbar {
+    background-image: none; } }
+/*-----------------Teaser-----------------*/
+section.teaser {
+  padding: 2%; }
+
+article.teaser {
+  height: 80vh;
+  padding-bottom: 5vh;
+  padding-top: 15vh; }
+
+img.teaser {
+  max-width: 20%;
+  /*jak ustawiam height to nie dzia┼éa w %*/ }
+
+img.teaser.left {
+  float: left;
+  margin-right: 1em; }
+
+img.teaser.right {
+  float: right; }
+
+/*----------------- Invitation -----------------*/
+article.invite {
+  height: 80vh;
+  padding-bottom: 10vh;
+  padding-top: 10vh; }
+
+div.invite {
+  margin: 20% auto;
+  border-radius: 5px;
+  padding: 5%;
+  min-height: 100px;
+  width: 60%;
+  min-width: 200px;
+  text-align: center;
+  background-color: #6ccba1;
+  -webkit-box-shadow: 10px 10px 21px 1px rgba(105, 147, 128, 0.8);
+  -moz-box-shadow: 10px 10px 21px 1px rgba(105, 147, 128, 0.8);
+  box-shadow: 10px 10px 21px 1px rgba(105, 147, 128, 0.8); }
+
+input[type="email"] {
+  width: 66%;
+  min-width: 180px;
+  color: #666;
+  background-color: #f2f2f2;
+  border: 2px solid #e0e0e0;
+  border-radius: 5px;
+  font-size: 140%;
+  padding: 1%;
+  margin-top: 2vw;
+  outline: none; }
+
+input[type="email"]:focus {
+  border: 2px solid #b2d4b2;
+  background-color: #e9f3f9;
+  -webkit-box-shadow: 0 0 15px 1px rgba(105, 147, 128, 0.8);
+  -moz-box-shadow: 0 0 15px 1px rgba(105, 147, 128, 0.8);
+  box-shadow: 0 0 15px 1px rgba(105, 147, 128, 0.8); }
+
+input[type="submit"] {
+  min-width: 180px;
+  color: #f8f8f8;
+  background-color: #5470b1;
+  font-size: 140%;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  padding: 1%;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none; }
+
+input[type="submit"]:hover {
+  background-color: #2e61d7; }
+
+input[type="submit"]:focus {
+  -webkit-box-shadow: 0 0 15px 1px rgba(84, 112, 177, 0.8);
+  -moz-box-shadow: 0 0 15px 1px rgba(84, 112, 177, 0.8);
+  box-shadow: 0 0 15px 1px rgba(84, 112, 177, 0.8); }
+
+/*-------------Team------------*/
+article.team {
+  padding-top: 10vh;
+  padding-bottom: 10vh; }
+
+section.team {
+  display: inline-block;
+  width: 45%;
+  text-align: center;
+  padding: 2%;
+  min-width: 200px; }
+
+.img-team {
+  border-radius: 50%;
+  width: 35%; }
+
+footer {
+  height: 50px;
+  background-color: #42BA85;
+  width: 100%;
+  bottom: 0; }
+
+/*# sourceMappingURL=style.css.map */
