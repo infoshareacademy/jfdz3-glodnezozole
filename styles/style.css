@@ -13,7 +13,7 @@ html, body {
 h1 {
     font-size: 2em;
 }
-h1, h2, h3, h4, h5, h6 nav.navbar {
+h1, h2, h3, h4, h5, h6, nav.navbar {
     font-family: 'Raleway', sans-serif;
     font-weight: normal;  }
 
@@ -81,6 +81,7 @@ input[type="checkbox"] {
   nav ul a:hover {
     background-color: #394e7d;
     color: #fff; } }
+
 @media screen and (max-width: 800px) {
   input[type="checkbox"] {
     display: inline; }
@@ -294,8 +295,7 @@ section.functionlist p {
 }
 
 h1.functionlist {
-    text-align: center;
-}
+    text-align: center;}
 
 /*-------------Team------------*/
 article.team {
@@ -311,8 +311,7 @@ section.team {
 
 .img-team {
     border-radius: 50%;
-    width: 35%;
-}
+    width: 35%; }
 
 /*-------------Rules------------*/
 #rules, #privacy_policy{
@@ -361,6 +360,7 @@ a.rules {
 }
 
 /*-------------Footer------------*/
+
 footer {
     background-color: #42BA85;
     width: 100%;
