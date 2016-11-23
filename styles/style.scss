@@ -14,9 +14,13 @@ html, body {
 h1 {
   font-size: 2em;
 }
-h1, h2, h3, h4, h5, h6, nav.navbar {
+h1, h2, h3, h4, h5, h6{
   font-family: 'Raleway', sans-serif;
   font-weight: normal;  }
+
+nav ul a{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;}
 
 p, span, a, li {
   font-family: 'Roboto', sans-serif;  }
@@ -40,7 +44,6 @@ header {
 nav.navbar {
   @include dimension;
   margin: 0 auto;
-  font-weight: 700;
   background-size: contain;
   background-position: left top;
   background-image: url(../img/logo.png);
@@ -62,21 +65,21 @@ input[type="checkbox"] {
 
   nav ul > li {
     display: inline-flex;
-    border-right: 2px dashed #2d805c;
     padding-right: 2px; }
 
   nav ul > li:first-child {
-    border-left: 2px dashed #2d805c;
     padding-left: 2px; }
 
   nav ul a {
     width: 99px;
     text-decoration: none;
     color:  $B_logo;
-    text-align: center; }
+    text-align: center;
+    cursor: pointer;}
 
   nav ul a:hover {
     background-color: $A_logo;
+    text-decoration: none;
     color: #fff; } }
 
 @media screen and (max-width: 800px) {
@@ -104,7 +107,7 @@ input[type="checkbox"] {
     width: 30px;
     height: 30px;
     font-size: 25px;
-    line-height: 30px;
+    line-height: 22px;
     text-align: center;
     color:  $B_logo;
     background-color: white;
@@ -127,7 +130,8 @@ input[type="checkbox"] {
     text-align: center; }
 
   nav ul a:hover {
-    color:$A_logo; }
+    color:$A_logo;
+    text-decoration: none;}
 
   nav.navbar {
     background-image: none; } }
