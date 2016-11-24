@@ -281,6 +281,16 @@ input[type="submit"]:focus {
   -moz-box-shadow: 0 0 15px 1px rgba(84, 112, 177, 0.8);
   box-shadow: 0 0 15px 1px rgba(84, 112, 177, 0.8); }
 
+@media (max-width: 570px) {
+  h3 {
+    font-size: 16px; }
+
+  input[type="submit"] {
+    font-size: 105%;
+    text-align: center; }
+
+  input[type="email"] {
+    font-size: 105%; } }
 /*-------------Function List --------- */
 article.functionlist {
   padding-top: 1vh;
