@@ -299,8 +299,11 @@ section.team {
   width: 45%;
   text-align: center;
   padding: 2%;
-  min-width: 200px; }
-
+  min-width: 200px;
+  }
+h4 {
+  min-height: 38px;
+}
 .img-team {
   border-radius: 50%;
   width: 35%; }
