@@ -9,6 +9,9 @@ html, body {
   padding: 0;
   border: 0; }
 
+body {
+  line-height: 0; }
+
 h1 {
   font-size: 2em; }
 
@@ -43,6 +46,7 @@ header {
   box-shadow: 0 1px 1px 0 #394e7d; }
 
 nav.navbar {
+  box-sizing: content-box;
   width: 90%;
   max-width: 1000px;
   margin: 0 auto;
@@ -50,11 +54,14 @@ nav.navbar {
   background-position: left top;
   background-image: url(../img/logo.png);
   background-repeat: no-repeat;
-  list-style-type: none; }
+  list-style-type: none;
+  font-size: 16px;
+  min-height: 36px; }
 
 article.bar {
-  padding: 2px;
-  background-color: #42BA85; }
+  padding-bottom: 2px;
+  background-color: #42BA85;
+  max-height: 45px; }
 
 input[type="checkbox"] {
   display: none; }
@@ -62,8 +69,9 @@ input[type="checkbox"] {
 @media screen and (min-width: 801px) {
   nav ul {
     margin: 0;
-    line-height: 220%;
-    text-align: right; }
+    line-height: 230%;
+    text-align: right;
+    padding-top: 0; }
 
   nav ul > li {
     display: inline-flex;
@@ -82,7 +90,8 @@ input[type="checkbox"] {
   nav ul a:hover {
     background-color: #394e7d;
     text-decoration: none;
-    color: #fff; } }
+    color: #fff;
+    border-radius: 2px; } }
 @media screen and (max-width: 800px) {
   input[type="checkbox"] {
     display: inline; }
@@ -102,13 +111,15 @@ input[type="checkbox"] {
     display: block; }
 
   article.bar {
-    min-height: 36px; }
+    min-height: 36px;
+    max-height: 164px;
+    line-height: 1.42857143; }
 
   #c1:before {
     width: 30px;
     height: 30px;
     font-size: 25px;
-    line-height: 22px;
+    line-height: 28px;
     text-align: center;
     color: #2d3d62;
     background-color: white;
@@ -259,7 +270,8 @@ input[type="submit"] {
   letter-spacing: 2px;
   border-radius: 5px;
   cursor: pointer;
-  outline: none; }
+  outline: none;
+  line-height: 1.42857143; }
 
 input[type="submit"]:hover {
   background-color: #2e61d7; }
@@ -299,11 +311,8 @@ section.team {
   width: 45%;
   text-align: center;
   padding: 2%;
-  min-width: 200px;
-  }
-h4 {
-  min-height: 38px;
-}
+  min-width: 200px; }
+
 .img-team {
   border-radius: 50%;
   width: 35%; }
@@ -355,7 +364,8 @@ footer {
   bottom: 0;
   display: flex;
   justify-content: space-around;
-  align-items: center; }
+  align-items: center;
+  line-height: 1.42857143; }
 
 span.footer {
   padding: 0 10%; }
