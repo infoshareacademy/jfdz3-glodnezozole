@@ -296,7 +296,8 @@ article.functionlist {
   padding-top: 1vh;
   padding-bottom: 5vh;
   padding-left: 10%;
-  padding-right: 10%; }
+  padding-right: 10%;
+  line-height: 1.1; }
 
 article.functionlist {
   font-size: 135%; }
@@ -338,7 +339,8 @@ section.team {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: scroll; }
+  overflow: scroll;
+  line-height: 1.1; }
 
 ol.rules {
   padding: 5%;
