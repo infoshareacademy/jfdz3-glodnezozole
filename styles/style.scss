@@ -149,75 +149,36 @@ input[type="checkbox"] {
     background-image: none; } }
 
 /*-----------------Teaser-----------------*/
-article.teaser {
-  padding-bottom: 5vh;
-  padding-top: 15vh;
-}
-@media (min-width: 523px) {
-  h1.teaser.piggy {
-    height: 20vh;
-    padding-left: 25vh;
-    display: flex;
-    align-items: center;
-    background-image: url("../img/skarbonka.png");
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: 20vh;
+@media screen and (max-width:768px){
+  article.teaser {
+    padding-top: 15%;
   }
-  h1.teaser.chart {
-    height: 20vh;
-    padding-right: 25vh;
-    display: flex;
-    align-items: center;
-    background-image: url("../img/wykres.png");
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: 20vh;
+  section.teaser {
+    max-width: 100%;
   }
-  h1.teaser.dollarpot {
-    height: 20vh;
-    padding-left: 25vh;
-    display: flex;
-    align-items: center;
-    background-image: url("../img/wzrost.png");
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: 17vh;
+  section.teaser img {
+    max-width: 200px;
+    width: 100%;
   }
-}
-@media (max-width: 522px) {
-  h1.teaser.piggy {
-    padding-top: 14vh;
-    font-size: small;
-    display: flex;
-    align-items: center;
-    background-image: url("../img/skarbonka.png");
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: 12vh;
-  }
-  h1.teaser.chart {
-    padding-top: 14vh;
-    font-size: small;
-    display: flex;
-    align-items: center;
-    background-image: url("../img/wykres.png");
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: 12vh;
-  }
-  h1.teaser.dollarpot {
-    padding-top: 14vh;
-    font-size: small;
-    display: flex;
-    align-items: center;
-    background-image: url("../img/wzrost.png");
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: 12vh;
+  section.teaser h1 {
+    text-align: center;
   }
 }
 
+@media screen and (min-width:769px){
+  article.teaser {
+    padding-top: 15%;
+  }
+  section.teaser {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+  }
+  section.teaser img {
+    max-width: 200px;
+    width: 100%;
+  }
+}
 /*----------------- Invitation -----------------*/
 article.invite  {
   padding-bottom: 10vh;
