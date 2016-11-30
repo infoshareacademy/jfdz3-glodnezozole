@@ -3,24 +3,39 @@
 <head>
     <meta charset="utf-8"/>
     <title> .swapp</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="styles/style.css"/>
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto:400,700&amp;subset=latin-ext" rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 <header>
-    <article class="bar">
-        <label for="c1"></label>
-        <input type="checkbox" id="c1">
-        <nav class="navbar">
-                <ul>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img alt="Brand" src="img/logo.svg">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
                     <li><a href="#trailer">Start</a></li>
                     <li><a href="#invitation">Subskrybuj</a></li>
                     <li><a href="#functionlist">Funkcje</a></li>
                     <li><a href="#dream_team">Autorzy</a></li>
                 </ul>
-        </nav>
-    </article>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
 </header>
 <main>
 
@@ -253,7 +268,7 @@
             w przepisach tej ustawy.</li>
         <li>Dane osobowe zbierane są przez Głodne Zozole, w celu
             umożliwienia użytkownikom korzystanie z aplikacji
-            mobilnej Yanosik. Dane te mogą ponadto służyć do
+            mobilnej .SWAPP. Dane te mogą ponadto służyć do
             weryfikacji, czy osoba rejestrująca spełnia wymagane
             przez Regulamin i przepisy prawne warunki.</li>
         <li>Podanie danych osobowych jest dobrowolne, jednak
@@ -267,5 +282,10 @@
     <a class="footer" href="#rules">Regulamin</a>
     <a class="footer" href="#privacy_policy">Polityka prywatności</a>
 </footer>
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
