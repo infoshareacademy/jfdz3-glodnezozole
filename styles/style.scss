@@ -10,10 +10,28 @@ html, body {
   margin: 0;
   padding: 0;
   border: 0;
+  font-size: 14px;
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 200%;
+}
+@media screen and (max-width:768px) {
+  h1, h2 {
+    font-size: 300%;
+    margin: 0;
+    padding: 0;
+  }
+  h3, h4 {
+    font-size: 275%;
+    margin: 0;
+    padding: 0;
+  }
+  h5, h6 {
+    font-size: 250%;
+    margin: 0;
+    padding: 0;
+  }
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Raleway', sans-serif;
@@ -56,7 +74,12 @@ main {
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
   border:none;
 }
-
+@media screen and (max-width:768px){
+  .navbar-default .navbar-nav>li>a {
+    font-size: 200%;
+    padding: 5% 0;
+  }
+}
 /*-----------------Teaser-----------------*/
 @media screen and (max-width:768px){
   article.teaser {
@@ -70,7 +93,7 @@ main {
     width: 100%;
   }
   section.teaser h1 {
-    text-align: center;
+    text-align: justify;
   }
 }
 
@@ -86,6 +109,9 @@ main {
   section.teaser img {
     max-width: 200px;
     width: 100%;
+  }
+  section.teaser h1 {
+    text-align: center;
   }
 }
 /*----------------- Invitation -----------------*/
@@ -117,6 +143,7 @@ input[type="email"] {
   margin-top: 2vw;
   outline: none; }
 
+
 input[type="email"]:focus {
   border: 2px solid #b2d4b2;
   background-color: #e9f3f9;
@@ -142,22 +169,22 @@ input[type="submit"]:hover {
 input[type="submit"]:focus {
   @include  submit-input(0 0 15px 1px rgba(84,112,177,0.8)); }
 
-@media (max-width: 570px) {
-  h3 {
-    font-size:16px;
+@media screen and (max-width:768px) {
+  input[type="email"] {
+    font-size: 250%;
+    text-align: center;
   }
   input[type="submit"] {
-    font-size: 105%;
+    font-size: 250%;
   }
-  input[type="email"] {
-    font-size: 105%;
-    text-align: center;
+  div.invite {
+    margin: auto;
+    width: 100%;
   }
 }
 
 /*-------------Function List --------- */
 article.functionlist {
-
   padding-top: 3%;
   padding-bottom: 5vh;
   padding-left: 10%;
@@ -176,6 +203,16 @@ section.functionlist p {
 
 h1.functionlist {
   text-align: center;}
+
+@media screen and (max-width:768px) {
+  section.functionlist p  {
+    font-size: 200%;
+    padding: 0;
+  }
+  article.functionlist {
+    padding: 0;
+  }
+}
 
 /*-------------Team------------*/
 article.team {
@@ -232,17 +269,13 @@ a.rules {
   opacity: 1;
   transition: opacity 1s, visibility 1s;
 }
-
 /*-------------Footer------------*/
 
 footer {
   background-color: $bar_bg;
   width: 100%;
   bottom: 0;
-  display: flex;
-  justify-content:space-around;
-  align-items: center;
-  line-height: 1.42857143;
+  text-align: center;
 }
 span.footer {
   padding: 0 10%;
@@ -258,5 +291,16 @@ a.footer:hover {
 a.footer:visited{
   color: black;
 }
-
+@media screen and (max-width:768px) {
+  span.footer {
+    font-size: 200%;
+    margin: 0;
+    padding: 0;
+  }
+  a.footer {
+    font-size: 200%;
+    margin: 0;
+    padding: 0;
+  }
+}
 /*# sourceMappingURL=style.css.map */
