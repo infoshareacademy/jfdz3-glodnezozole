@@ -23,7 +23,7 @@ nav ul a{
   font-family: 'Raleway', sans-serif;
   font-weight: 700;}
 
-p, span, a, li {
+p, span, a, li, input, button {
   font-family: 'Roboto', sans-serif;  }
 
 main {
@@ -89,66 +89,53 @@ main {
   }
 }
 /*----------------- Invitation -----------------*/
-section.invite{
+section.invite {
   background-image: url(../img/invite.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  //background-size: contain;
   background-position: center;
-  padding: 25% 0 30%;
-  //margin-top:5%;
-  margin-bottom:5%; //byc moze wyregulowac (na wielkosci komorkowej +ale raczej padding niz margin (margin delikatnie)
-}
+  padding: 28% 0 30%;
+  margin-top: 11%;
+  margin-bottom: 9%; }
 
-section.amenity{
-  background-color: rgba(0,0,0,0.45);
+section.amenity {
+  background-color: rgba(0, 0, 0, 0.45);
   filter: alpha(opacity=45);
-  padding:1%;
+  padding: 1%;
   border-radius: 12px;
-  margin-bottom: 2em;
-}
+  margin-bottom: 2em; }
 
-h3.amenity-text{
+h3.amenity-text {
   color: #ffffff;
   margin-left: 2%;
-  margin-top: 10px;
-}
+  margin-top: 10px; }
 
 input[type="email"] {
-  background-color:#f6f6f5;
-  //border: 1px solid #a6a6a6;
-  border: 1px solid #8d8d8d;
-  //outline: none;
-}
+  background-color: #f6f6f5;
+  border: 1px solid #8d8d8d; }
 
-.email-btn
-{
-  padding-left: 0;
-  //border:10px #666666;
-}
+.email-btn {
+  padding-left: 0; }
 
-button[type="submit"]{
-  background-color:#e9d6c3;
-  border: 1px solid #8d8d8d;
-}
+button[type="submit"] {
+  background-color: #e9d6c3;
+  border: 1px solid #8d8d8d; }
 
 .btn-mode:focus,
-input[type="email"]:focus
-{
-  border:1px #666666;
+input[type="email"]:focus {
+  border: 1px #666666;
   background-color: #fff3e8;
-  //background-color: #ffe9d4;
-  @include email-input(0 0 15px 1px rgba(102,102,102,0.8));
-  outline: none;
-}
+  -webkit-box-shadow: 0 0 15px 1px rgba(102, 102, 102, 0.8);
+  -moz-box-shadow: 0 0 15px 1px rgba(102, 102, 102, 0.8);
+  box-shadow: 0 0 15px 1px rgba(102, 102, 102, 0.8);
+  outline: none; }
 
-@media screen and (min-width: 993px) {
-  section.invite{
-    background-size: cover;
-    //background-size: contain;
-    //tutaj dopisac odpowiednio padding w zaleznosci od zapotrzebowania przy skurczaniu
-  }
-}
+//@media screen and (min-width: 993px) {
+//  section.invite {
+//    background-size: cover;
+//    padding: 28% 0 30%;
+//    margin-top: 11%;
+//    margin-bottom: 9%; } }
 
 /*-------------Function List --------- */
 article.functionlist {

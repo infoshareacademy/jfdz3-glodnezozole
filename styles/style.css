@@ -20,7 +20,7 @@ nav ul a {
   font-family: 'Raleway', sans-serif;
   font-weight: 700; }
 
-p, span, a, li {
+p, span, a, li, input, button {
   font-family: 'Roboto', sans-serif; }
 
 main {
@@ -86,8 +86,9 @@ section.invite {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 25% 0 30%;
-  margin-bottom: 5%; }
+  padding: 28% 0 30%;
+  margin-top: 11%;
+  margin-bottom: 9%; }
 
 section.amenity {
   background-color: rgba(0, 0, 0, 0.45);
@@ -121,9 +122,6 @@ input[type="email"]:focus {
   box-shadow: 0 0 15px 1px rgba(102, 102, 102, 0.8);
   outline: none; }
 
-@media screen and (min-width: 993px) {
-  section.invite {
-    background-size: cover; } }
 /*-------------Function List --------- */
 article.functionlist {
   padding-top: 3%;
