@@ -31,8 +31,8 @@ main {
   margin-right: auto;
   margin-left: auto;
   min-height: 100%;
-  background-color: rgba(255, 255, 255, 0.7);
-  filter: alpha(opacity=70); }
+  background-color: rgba(255, 255, 255, 0.9);
+  filter: alpha(opacity=90); }
 
 .empty {
   clear: both; }
