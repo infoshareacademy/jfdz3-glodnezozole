@@ -45,8 +45,8 @@ main {
   margin-right: auto;
   margin-left: auto;
   min-height: 100%;
-  background-color: rgba(255, 255, 255, 0.7);
-  filter: alpha( opacity=70);
+  background-color: rgba(255, 255, 255, 0.9);
+  filter: alpha( opacity=90); //for IE
 }
 
 .empty {
@@ -99,6 +99,12 @@ html {
     padding: 5% 0;
   }
 }
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+  background: none;
+  border-bottom: 3px solid $B_logo;
+  color: $B_logo;
+}
 /*-----------------Teaser-----------------*/
 @media screen and (max-width:768px){
   article.teaser {
@@ -118,7 +124,7 @@ html {
 
 @media screen and (min-width:769px){
   article.teaser {
-    margin-top: 65%;
+    margin-top: 80%;
     padding-top: 15%;
   }
   section.teaser {
@@ -160,11 +166,10 @@ input[type="email"] {
   background-color: #f2f2f2;
   border: 2px solid #e0e0e0;
   border-radius: 5px;
-  //font-size: 140%;
+  font-size: 140%;
   padding: 1%;
   margin-top: 2vw;
   outline: none; }
-
 
 input[type="email"]:focus {
   border: 2px solid #b2d4b2;
@@ -175,7 +180,7 @@ input[type="submit"] {
   min-width: 180px;
   color: #f8f8f8;
   background-color: #5470b1;
-  //font-size: 140%;
+  font-size: 140%;
   margin-top: 2vh;
   margin-bottom: 2vh;
   padding: 1%;
@@ -191,17 +196,16 @@ input[type="submit"]:hover {
 input[type="submit"]:focus {
   @include  submit-input(0 0 15px 1px rgba(84,112,177,0.8)); }
 
-@media screen and (max-width:768px) {
-  input[type="email"] {
-    //font-size: 250%;
-    text-align: center;
+@media (max-width: 570px) {
+  h3 {
+    font-size:16px;
   }
   input[type="submit"] {
-    //font-size: 250%;
+    font-size: 105%;
   }
-  div.invite {
-    margin: auto;
-    width: 100%;
+  input[type="email"] {
+    font-size: 105%;
+    text-align: center;
   }
 }
 
