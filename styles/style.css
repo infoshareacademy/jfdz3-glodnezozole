@@ -30,13 +30,12 @@ main {
   max-width: 1000px;
   margin-right: auto;
   margin-left: auto;
-  min-height: 100%; }
+  min-height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  filter: alpha(opacity=70); }
 
 .empty {
   clear: both; }
-
-.teaser, .invite, .functionlist, .team {
-  background-color: rgba(255, 255, 255, 0.6); }
 
 /*----------------- Background -----------------*/
 html {
@@ -110,7 +109,8 @@ html {
 /*----------------- Invitation -----------------*/
 article.invite {
   padding-bottom: 10vh;
-  padding-top: 10vh; }
+  padding-top: 10vh;
+  background: none; }
 
 div.invite {
   margin: 20% auto;
@@ -183,30 +183,37 @@ article.functionlist {
   padding-left: 10%;
   padding-right: 10%;
   line-height: 1.1;
-  font-size: 135%; }
+  font-size: 135%;
+  background: none; }
 
 section.functionlist h1:first-letter {
   color: #42BA85;
-  font-size: 200%; }
+  font-size: 200%;
+  background: none; }
 
 section.functionlist p {
-  padding-left: 40%; }
+  padding-left: 40%;
+  background: none; }
 
 h1.functionlist {
-  text-align: center; }
+  text-align: center;
+  background: none; }
 
 /*-------------Team------------*/
 article.team {
   padding-top: 10%;
-  padding-bottom: 21%; }
+  padding-bottom: 21%;
+  background: none; }
 
 section.team {
   text-align: center;
-  padding: 2% 0; }
+  padding: 2% 0;
+  background: none; }
 
 .img-team {
   border-radius: 50%;
-  width: 35%; }
+  width: 35%;
+  background: none; }
 
 /*-------------Rules------------*/
 #rules, #privacy_policy {
