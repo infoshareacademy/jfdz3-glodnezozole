@@ -79,6 +79,11 @@ html {
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
   border: none; }
 
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+  background: none;
+  border-bottom: 3px solid #2d3d62;
+  color: #2d3d62; }
+
 /*-----------------Teaser-----------------*/
 @media screen and (max-width: 768px) {
   article.teaser {
@@ -95,7 +100,7 @@ html {
     text-align: center; } }
 @media screen and (min-width: 769px) {
   article.teaser {
-    margin-top: 65%;
+    margin-top: 80%;
     padding-top: 15%; }
 
   section.teaser {
