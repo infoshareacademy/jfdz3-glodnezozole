@@ -10,25 +10,18 @@ html, body {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 14px;
 }
 
-h1 {
-  font-size: 200%;
-}
 @media screen and (max-width:768px) {
   h1, h2 {
-    font-size: 300%;
     margin: 0;
     padding: 0;
   }
   h3, h4 {
-    font-size: 275%;
     margin: 0;
     padding: 0;
   }
   h5, h6 {
-    font-size: 250%;
     margin: 0;
     padding: 0;
   }
@@ -76,7 +69,7 @@ main {
 }
 @media screen and (max-width:768px){
   .navbar-default .navbar-nav>li>a {
-    font-size: 200%;
+    font-size: 150%;
     padding: 5% 0;
   }
 }
@@ -92,8 +85,8 @@ main {
     max-width: 200px;
     width: 100%;
   }
-  section.teaser h1 {
-    text-align: justify;
+  section.teaser h2 {
+    font-size: 150%;
   }
 }
 
@@ -110,7 +103,7 @@ main {
     max-width: 200px;
     width: 100%;
   }
-  section.teaser h1 {
+  section.teaser h2 {
     text-align: center;
   }
 }
@@ -138,7 +131,7 @@ input[type="email"] {
   background-color: #f2f2f2;
   border: 2px solid #e0e0e0;
   border-radius: 5px;
-  font-size: 140%;
+  //font-size: 140%;
   padding: 1%;
   margin-top: 2vw;
   outline: none; }
@@ -153,7 +146,7 @@ input[type="submit"] {
   min-width: 180px;
   color: #f8f8f8;
   background-color: #5470b1;
-  font-size: 140%;
+  //font-size: 140%;
   margin-top: 2vh;
   margin-bottom: 2vh;
   padding: 1%;
@@ -171,11 +164,11 @@ input[type="submit"]:focus {
 
 @media screen and (max-width:768px) {
   input[type="email"] {
-    font-size: 250%;
+    //font-size: 250%;
     text-align: center;
   }
   input[type="submit"] {
-    font-size: 250%;
+    //font-size: 250%;
   }
   div.invite {
     margin: auto;
@@ -206,7 +199,6 @@ h1.functionlist {
 
 @media screen and (max-width:768px) {
   section.functionlist p  {
-    font-size: 200%;
     padding: 0;
   }
   article.functionlist {
@@ -293,12 +285,10 @@ a.footer:visited{
 }
 @media screen and (max-width:768px) {
   span.footer {
-    font-size: 200%;
     margin: 0;
     padding: 0;
   }
   a.footer {
-    font-size: 200%;
     margin: 0;
     padding: 0;
   }
