@@ -11,9 +11,18 @@ html, body {
   height: 100%;
   background: none; }
 
-h1 {
-  font-size: 2em; }
+@media screen and (max-width: 768px) {
+  h1, h2 {
+    margin: 0;
+    padding: 0; }
 
+  h3, h4 {
+    margin: 0;
+    padding: 0; }
+
+  h5, h6 {
+    margin: 0;
+    padding: 0; } }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Raleway', sans-serif;
   font-weight: normal; }
@@ -79,6 +88,10 @@ html {
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
   border: none; }
 
+@media screen and (max-width: 768px) {
+  .navbar-default .navbar-nav > li > a {
+    font-size: 150%;
+    padding: 5% 0; } }
 /*-----------------Teaser-----------------*/
 @media screen and (max-width: 768px) {
   article.teaser {
@@ -91,8 +104,8 @@ html {
     max-width: 200px;
     width: 100%; }
 
-  section.teaser h1 {
-    text-align: center; } }
+  section.teaser h2 {
+    font-size: 150%; } }
 @media screen and (min-width: 769px) {
   article.teaser {
     margin-top: 65%;
@@ -105,7 +118,10 @@ html {
 
   section.teaser img {
     max-width: 200px;
-    width: 100%; } }
+    width: 100%; }
+
+  section.teaser h2 {
+    text-align: center; } }
 /*----------------- Invitation -----------------*/
 article.invite {
   padding-bottom: 10vh;
@@ -132,7 +148,6 @@ input[type="email"] {
   background-color: #f2f2f2;
   border: 2px solid #e0e0e0;
   border-radius: 5px;
-  font-size: 140%;
   padding: 1%;
   margin-top: 2vw;
   outline: none; }
@@ -148,7 +163,6 @@ input[type="submit"] {
   min-width: 180px;
   color: #f8f8f8;
   background-color: #5470b1;
-  font-size: 140%;
   margin-top: 2vh;
   margin-bottom: 2vh;
   padding: 1%;
@@ -166,16 +180,13 @@ input[type="submit"]:focus {
   -moz-box-shadow: 0 0 15px 1px rgba(84, 112, 177, 0.8);
   box-shadow: 0 0 15px 1px rgba(84, 112, 177, 0.8); }
 
-@media (max-width: 570px) {
-  h3 {
-    font-size: 16px; }
-
-  input[type="submit"] {
-    font-size: 105%; }
-
+@media screen and (max-width: 768px) {
   input[type="email"] {
-    font-size: 105%;
-    text-align: center; } }
+    text-align: center; }
+
+  div.invite {
+    margin: auto;
+    width: 100%; } }
 /*-------------Function List --------- */
 article.functionlist {
   padding-top: 3%;
@@ -199,6 +210,12 @@ h1.functionlist {
   text-align: center;
   background: none; }
 
+@media screen and (max-width: 768px) {
+  section.functionlist p {
+    padding: 0; }
+
+  article.functionlist {
+    padding: 0; } }
 /*-------------Team------------*/
 article.team {
   padding-top: 10%;
@@ -257,10 +274,7 @@ footer {
   background-color: #42BA85;
   width: 100%;
   bottom: 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  line-height: 1.42857143; }
+  text-align: center; }
 
 span.footer {
   padding: 0 10%; }
@@ -276,6 +290,14 @@ a.footer:hover {
 a.footer:visited {
   color: black; }
 
+@media screen and (max-width: 768px) {
+  span.footer {
+    margin: 0;
+    padding: 0; }
+
+  a.footer {
+    margin: 0;
+    padding: 0; } }
 /*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */
