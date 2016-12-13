@@ -94,15 +94,15 @@ function update() {
 	game.physics.arcade.overlap(player, food, eatFood);
 }
 
-//eatFood function
-function eatFood(player, food) {
+	//eatFood function
+	function eatFood(player, food) {
 	//remove the piece of food
 	food.kill();
 	//update the score
 	score++;
 	scoreText.text = score;
 }
-
+//place enemies
 function createEnemies() {
 	for (var x = 0; x<2; x++) {
 		for (var y = 0; y<3; y++) {
@@ -113,7 +113,7 @@ function createEnemies() {
 
 	enemies.x = 100;
 	enemies.y =50;
-
+//move enemies up and down
 	var tween = game.add.tween(enemies).to({y:500},1800, Phaser.Easing.Linear.None, true, 0, 1000, true);
 
 	tween.onLoop.add(descend,this);
