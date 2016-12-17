@@ -3,23 +3,26 @@
 <head>
     <meta charset="utf-8"/>
     <title> .swapp</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="vendors/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet" media="all"/>
     <link rel="stylesheet" type="text/css" href="styles/style.css"/>
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto:400,700&amp;subset=latin-ext" rel="stylesheet"/>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- skrypty javascript -->
+    <!-- https://jquery.com/ -->
+    <script src="vendors/jquery/jquery-2.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <!-- http://getbootstrap.com/components/ -->
+    <script src="vendors/bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
+<body body data-spy="scroll" data-target=".navbar" data-offset="50">
 <header>
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                    <span class="sr-only"></span>
+                    <span><img src="img/piggy-bank3.png"></span>
                 </button>
                 <a class="navbar-brand" href="#">
                     <img alt="Brand" src="img/logo.svg">
@@ -39,26 +42,24 @@
     </nav>
 </header>
 <main>
-
-
     <article class="container-fluid teaser" id="trailer">
         <section class="container teaser">
-            <figure class="col-sm-2"><img src="img/skarbonka.png" class="img-responsive center-block"></figure>
-            <h1 class="teaser col-sm-10">
+            <figure class="col-sm-2"><img src="img/skarbonka.svg" class="img-responsive center-block"></figure>
+            <h2 class="teaser col-sm-10">
                 <span class="teaser">Nie wiesz, jak skutecznie zainwestować oszczędności?</span>
-            </h1>
+            </h2>
         </section>
         <section class="container teaser">
-            <figure class="col-sm-2 col-sm-push-10"><img src="img/wykres.png" class="img-responsive center-block"></figure>
-            <h1 class="teaser col-sm-10 col-sm-pull-2">
+            <figure class="col-sm-2 col-sm-push-10"><img src="img/wykres.svg" class="img-responsive center-block"></figure>
+            <h2 class="teaser col-sm-10 col-sm-pull-2">
                 <span>Nie masz głowy do obszernych i zawiłych opracowań analityków rynkowych?</span>
-            </h1>
+            </h2>
         </section>
         <section class="container teaser">
-            <figure class="col-sm-2"><img src="img/wzrost.png" class="img-responsive center-block"></figure>
-            <h1 class="teaser col-sm-10">
-                <span class="dollarpot">My zrobimy to za Ciebie! Skorzystaj z naszej aplikacji, która dostarcza wszelkie niezbędne informacje, abyś mógł właściwie zaintestować swoje pieniądze.</span>
-            </h1>
+            <figure class="col-sm-2"><img src="img/wzrost.svg" class="img-responsive center-block"></figure>
+            <h2 class="teaser col-sm-10">
+                <span class="dollarpot">My zrobimy to za Ciebie! Skorzystaj z naszej aplikacji, która dostarcza wszelkie niezbędne informacje, abyś mógł właściwie zainwestować swoje pieniądze.</span>
+            </h2>
         </section>
     </article>
 
@@ -320,15 +321,10 @@
     </div>
 </section>
 
-<footer>
-    <span class="footer">&copy; 2016 Głodne Zozole</span>
-    <a class="footer" href="#rules">Regulamin</a>
-    <a class="footer" href="#privacy_policy">Polityka prywatności</a>
+<footer class="container-fluid">
+    <span class="footer col-xs-12 col-sm-4">&copy; 2016 Głodne Zozole</span>
+    <a class="footer col-xs-12 col-sm-4" href="#rules">Regulamin</a>
+    <a class="footer col-xs-12 col-sm-4" href="#privacy_policy">Polityka prywatności</a>
 </footer>
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>

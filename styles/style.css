@@ -7,11 +7,22 @@
 html, body {
   margin: 0;
   padding: 0;
-  border: 0; }
+  border: 0;
+  height: 100%;
+  background: none; }
 
-h1 {
-  font-size: 2em; }
+@media screen and (max-width: 768px) {
+  h1, h2 {
+    margin: 0;
+    padding: 0; }
 
+  h3, h4 {
+    margin: 0;
+    padding: 0; }
+
+  h5, h6 {
+    margin: 0;
+    padding: 0; } }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Raleway', sans-serif;
   font-weight: normal; }
@@ -20,7 +31,7 @@ nav ul a {
   font-family: 'Raleway', sans-serif;
   font-weight: 700; }
 
-p, span, a, li, input, button {
+p, span, a, li {
   font-family: 'Roboto', sans-serif; }
 
 input[type="email"],
@@ -33,21 +44,44 @@ main {
   max-width: 1000px;
   margin-right: auto;
   margin-left: auto;
-  min-height: 100%; }
+  min-height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  filter: alpha(opacity=90); }
 
 .empty {
   clear: both; }
 
+/*----------------- Background -----------------*/
+html {
+  background: url(../img/miasto.svg) no-repeat center center fixed;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain; }
+
 /*----------------- Navigate -----------------*/
 .navbar-default {
   background-color: #42BA85;
-  border: none; }
+  border: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+
+.navbar-default:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
 
 .navbar-default .navbar-nav > li > a {
   color: #394e7d; }
 
+.navbar-default .navbar-toggle {
+  border: none; }
+
+.navbar-toggle {
+  margin-top: 3px;
+  margin-bottom: 0; }
+
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
-  color: #2d3d62; }
+  color: #ffffff;
+  background-color: #394e7d; }
 
 .navbar-brand > img {
   height: 48px;
@@ -58,6 +92,15 @@ main {
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
   border: none; }
+
+@media screen and (max-width: 768px) {
+  .navbar-default .navbar-nav > li > a {
+    font-size: 150%;
+    padding: 5% 0; } }
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+  background: none;
+  border-bottom: 3px solid #2d3d62;
+  color: #2d3d62; }
 
 /*-----------------Teaser-----------------*/
 @media screen and (max-width: 768px) {
@@ -71,10 +114,11 @@ main {
     max-width: 200px;
     width: 100%; }
 
-  section.teaser h1 {
-    text-align: center; } }
+  section.teaser h2 {
+    font-size: 150%; } }
 @media screen and (min-width: 769px) {
   article.teaser {
+    margin-top: 80%;
     padding-top: 15%; }
 
   section.teaser {
@@ -84,7 +128,10 @@ main {
 
   section.teaser img {
     max-width: 200px;
-    width: 100%; } }
+    width: 100%; }
+
+  section.teaser h2 {
+    text-align: center; } }
 /*----------------- Invitation -----------------*/
 article#invitation {
   padding-left: 0; }
@@ -140,30 +187,43 @@ article.functionlist {
   padding-left: 10%;
   padding-right: 10%;
   line-height: 1.1;
-  font-size: 135%; }
+  font-size: 135%;
+  background: none; }
 
 section.functionlist h1:first-letter {
   color: #42BA85;
-  font-size: 200%; }
+  font-size: 200%;
+  background: none; }
 
 section.functionlist p {
-  padding-left: 40%; }
+  padding-left: 40%;
+  background: none; }
 
 h1.functionlist {
-  text-align: center; }
+  text-align: center;
+  background: none; }
 
+@media screen and (max-width: 768px) {
+  section.functionlist p {
+    padding: 0; }
+
+  article.functionlist {
+    padding: 0; } }
 /*-------------Team------------*/
 article.team {
   padding-top: 10%;
-  padding-bottom: 21%; }
+  padding-bottom: 21%;
+  background: none; }
 
 section.team {
   text-align: center;
-  padding: 2% 0; }
+  padding: 2% 0;
+  background: none; }
 
 .img-team {
   border-radius: 50%;
-  width: 35%; }
+  width: 35%;
+  background: none; }
 
 /*-------------Rules------------*/
 #rules, #privacy_policy {
@@ -207,10 +267,7 @@ footer {
   background-color: #42BA85;
   width: 100%;
   bottom: 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  line-height: 1.42857143; }
+  text-align: center; }
 
 span.footer {
   padding: 0 10%; }
@@ -226,6 +283,14 @@ a.footer:hover {
 a.footer:visited {
   color: black; }
 
+@media screen and (max-width: 768px) {
+  span.footer {
+    margin: 0;
+    padding: 0; }
+
+  a.footer {
+    margin: 0;
+    padding: 0; } }
 /*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */
