@@ -26,6 +26,12 @@ nav ul a{
 p, span, a, li, input, button {
   font-family: 'Roboto', sans-serif;  }
 
+input[type="email"],
+button.font-style {
+  font-family: 'Roboto', sans-serif;
+  font-size: 115%;
+}
+
 main {
   @include dimension;
   margin-right: auto;
@@ -89,34 +95,34 @@ main {
   }
 }
 /*----------------- Invitation -----------------*/
+article#invitation  {
+  padding-left: 0;}
+
 section.invite {
-  background-image: url(../img/invite.jpg);
-  /* Photo credit: kenteegardin via Foter.com / CC BY-SA */
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding: 28% 0 30%;
-  margin-top: 11%;
-  margin-bottom: 9%; }
+  background:none;
+  padding: 28% 0 50%;
+}
 
 section.amenity {
-  background-color: rgba(0, 0, 0, 0.45);
-  filter: alpha(opacity=45);
-  padding: 1%;
+  background-color: #6ccba1;
+  @include invite(10px 10px 21px 1px rgba(105,147,128,0.8));
+  display: inline-block;
+  padding-bottom: 5%;
   border-radius: 12px;
-  margin-bottom: 2em; }
+}
 
 h3.amenity-text {
-  color: #ffffff;
-  margin-left: 2%;
-  margin-top: 10px; }
+  color: #000000;
+  margin-top: 10px;
+  padding:3%;
+  font-size: 133%;
+  text-align: center;
+}
 
 input[type="email"] {
   background-color: #f6f6f5;
-  border: 1px solid #8d8d8d; }
-
-.email-btn {
-  padding-left: 0; }
+  border: 1px solid #8d8d8d;
+  text-align: center;}
 
 button[type="submit"] {
   background-color: #e9d6c3;
@@ -126,17 +132,19 @@ button[type="submit"] {
 input[type="email"]:focus {
   border: 1px #666666;
   background-color: #fff3e8;
-  -webkit-box-shadow: 0 0 15px 1px rgba(102, 102, 102, 0.8);
-  -moz-box-shadow: 0 0 15px 1px rgba(102, 102, 102, 0.8);
-  box-shadow: 0 0 15px 1px rgba(102, 102, 102, 0.8);
+  @include email-input(0 0 15px 1px rgba(102, 102, 102, 0.8));
   outline: none; }
 
-//@media screen and (min-width: 993px) {
-//  section.invite {
-//    background-size: cover;
-//    padding: 28% 0 30%;
-//    margin-top: 11%;
-//    margin-bottom: 9%; } }
+@media screen and (min-width: 769px) {
+  h3.amenity-text {
+    font-size: 152%;
+  }
+}
+@media screen and (max-width: 550px){
+  section.invite {
+    margin-bottom: 28%;
+  }
+}
 
 /*-------------Function List --------- */
 article.functionlist {
