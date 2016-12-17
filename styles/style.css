@@ -1,55 +1,298 @@
-/*
-Error: Invalid CSS after "... origin/develop": expected "{", was "}"
-        on line 109 of style.scss
-
-104: .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-105:   background: none;
-106:   border-bottom: 3px solid $B_logo;
-107:   color: $B_logo;
-108: >>>>>>> origin/develop
-109: }
-110: /*-----------------Teaser-----------------*\/
-111: @media screen and (max-width:768px){
-112:   article.teaser {
-113:     padding-top: 15%;
-114:   }
-
-Backtrace:
-style.scss:109
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1189:in `expected'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1125:in `expected'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1120:in `tok!'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:656:in `block'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:726:in `declaration_or_ruleset'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:676:in `block_child'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:668:in `block_contents'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:657:in `block'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:726:in `declaration_or_ruleset'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:676:in `block_child'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:668:in `block_contents'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:657:in `block'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:649:in `ruleset'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:675:in `block_child'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:668:in `block_contents'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:125:in `stylesheet'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:41:in `parse'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:406:in `_to_tree'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin.rb:82:in `update_stylesheets'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:51:in `process_result'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/base.rb:52:in `parse'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/base.rb:19:in `parse!'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/bin/scss:13:in `<top (required)>'
-/usr/local/bin/scss:23:in `load'
-/usr/local/bin/scss:23:in `<main>'
+/*Kolory
+#42BA85
+#000000
+#ffffff
+#394e7d
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"... origin/develop\": expected \"{\", was \"}\"\A         on line 109 of style.scss\A \A 104: .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {\A 105:   background: none;\A 106:   border-bottom: 3px solid $B_logo;\A 107:   color: $B_logo;\A 108: >>>>>>> origin/develop\A 109: }\A 110: /*-----------------Teaser-----------------*/\A 111: @media screen and (max-width:768px){\A 112:   article.teaser {\A 113:     padding-top: 15%;\A 114:   }"; }
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  height: 100%;
+  background: none; }
+
+@media screen and (max-width: 768px) {
+  h1, h2 {
+    margin: 0;
+    padding: 0; }
+
+  h3, h4 {
+    margin: 0;
+    padding: 0; }
+
+  h5, h6 {
+    margin: 0;
+    padding: 0; } }
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal; }
+
+nav ul a {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700; }
+
+p, span, a, li {
+  font-family: 'Roboto', sans-serif; }
+
+input[type="email"],
+button.font-style {
+  font-family: 'Roboto', sans-serif;
+  font-size: 115%; }
+
+main {
+  width: 90%;
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  min-height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  filter: alpha(opacity=90);
+  /*for IE */ }
+
+.empty {
+  clear: both; }
+
+/*----------------- Background -----------------*/
+html {
+  background: url(../img/miasto.svg) no-repeat center center fixed;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain; }
+
+/*----------------- Navigate -----------------*/
+.navbar-default {
+  background-color: #42BA85;
+  border: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+
+.navbar-default:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+
+.navbar-default .navbar-nav > li > a {
+  color: #394e7d; }
+
+.navbar-default .navbar-toggle {
+  border: none; }
+
+.navbar-toggle {
+  margin-top: 3px;
+  margin-bottom: 0; }
+
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+  color: #ffffff;
+  background-color: #394e7d; }
+
+.navbar-brand > img {
+  height: 48px;
+  margin: -15px; }
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #394e7d; }
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border: none; }
+
+@media screen and (max-width: 768px) {
+  .navbar-default .navbar-nav > li > a {
+    font-size: 150%;
+    padding: 5% 0; } }
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+  background: none;
+  border-bottom: 3px solid #2d3d62;
+  color: #2d3d62; }
+
+/*-----------------Teaser-----------------*/
+@media screen and (max-width: 768px) {
+  article.teaser {
+    padding-top: 15%; }
+
+  section.teaser {
+    max-width: 100%; }
+
+  section.teaser img {
+    max-width: 200px;
+    width: 100%; }
+
+  section.teaser h2 {
+    font-size: 150%; } }
+@media screen and (min-width: 769px) {
+  article.teaser {
+    margin-top: 80%;
+    padding-top: 15%; }
+
+  section.teaser {
+    display: flex;
+    align-items: center;
+    max-width: 100%; }
+
+  section.teaser img {
+    max-width: 200px;
+    width: 100%; }
+
+  section.teaser h2 {
+    text-align: center; } }
+/*----------------- Invitation -----------------*/
+article#invitation {
+  padding-left: 0; }
+
+section.invite {
+  background: none;
+  padding: 28% 0 50%; }
+
+section.amenity {
+  background-color: #6ccba1;
+  -webkit-box-shadow: 10px 10px 21px 1px rgba(105, 147, 128, 0.8);
+  -moz-box-shadow: 10px 10px 21px 1px rgba(105, 147, 128, 0.8);
+  box-shadow: 10px 10px 21px 1px rgba(105, 147, 128, 0.8);
+  display: inline-block;
+  padding-bottom: 5%;
+  border-radius: 12px; }
+
+h3.amenity-text {
+  color: #000000;
+  margin-top: 10px;
+  padding: 3%;
+  font-size: 133%;
+  text-align: center; }
+
+input[type="email"] {
+  background-color: #f6f6f5;
+  border: 1px solid #8d8d8d;
+  text-align: center; }
+
+button[type="submit"] {
+  background-color: #e9d6c3;
+  border: 1px solid #8d8d8d; }
+
+.btn-mode:focus,
+input[type="email"]:focus {
+  border: 1px #666666;
+  background-color: #fff3e8;
+  -webkit-box-shadow: 0 0 15px 1px rgba(102, 102, 102, 0.8);
+  -moz-box-shadow: 0 0 15px 1px rgba(102, 102, 102, 0.8);
+  box-shadow: 0 0 15px 1px rgba(102, 102, 102, 0.8);
+  outline: none; }
+
+@media screen and (min-width: 769px) {
+  h3.amenity-text {
+    font-size: 152%; } }
+@media screen and (max-width: 550px) {
+  section.invite {
+    margin-bottom: 28%; } }
+/*-------------Function List --------- */
+article.functionlist {
+  padding-top: 3%;
+  padding-bottom: 5vh;
+  padding-left: 10%;
+  padding-right: 10%;
+  line-height: 1.1;
+  font-size: 135%;
+  background: none; }
+
+section.functionlist h1:first-letter {
+  color: #42BA85;
+  font-size: 200%;
+  background: none; }
+
+section.functionlist p {
+  padding-left: 40%;
+  background: none; }
+
+h1.functionlist {
+  text-align: center;
+  background: none; }
+
+@media screen and (max-width: 768px) {
+  section.functionlist p {
+    padding: 0; }
+
+  article.functionlist {
+    padding: 0; } }
+/*-------------Team------------*/
+article.team {
+  padding-top: 10%;
+  padding-bottom: 21%;
+  background: none; }
+
+section.team {
+  text-align: center;
+  padding: 2% 0;
+  background: none; }
+
+.img-team {
+  border-radius: 50%;
+  width: 35%;
+  background: none; }
+
+/*-------------Rules------------*/
+#rules, #privacy_policy {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  overflow: scroll; }
+
+ol.rules {
+  padding: 5%;
+  width: 70%;
+  background: #fff;
+  text-align: justify;
+  margin: 8% auto; }
+
+section#rules > ol {
+  list-style-type: upper-roman; }
+
+.cross_btn {
+  position: relative; }
+
+a.rules {
+  position: absolute;
+  top: 2%;
+  right: 16%; }
+
+#privacy_policy:not(:target), #rules:not(:target) {
+  visibility: hidden;
+  opacity: 0; }
+
+#privacy_policy:target, #rules:target {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 1s, visibility 1s; }
+
+/*-------------Footer------------*/
+footer {
+  background-color: #42BA85;
+  width: 100%;
+  bottom: 0;
+  text-align: center; }
+
+span.footer {
+  padding: 0 10%; }
+
+a.footer {
+  padding: 0 10%;
+  color: black; }
+
+a.footer:hover {
+  font-weight: bold;
+  color: black; }
+
+a.footer:visited {
+  color: black; }
+
+@media screen and (max-width: 768px) {
+  span.footer {
+    margin: 0;
+    padding: 0; }
+
+  a.footer {
+    margin: 0;
+    padding: 0; } }
+/*# sourceMappingURL=style.css.map */
+
+/*# sourceMappingURL=style.css.map */

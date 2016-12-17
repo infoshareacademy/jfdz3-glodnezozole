@@ -14,7 +14,7 @@
     <script src="vendors/bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 <header>
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -63,19 +63,61 @@
         </section>
     </article>
 
-    <article class="invite" id="invitation">
-        <div class="invite">
-            <h3>Wpisz w poniższym polu swój adres mailowy,
-                aby otrzymać od nas informacje o nadchodzącej premierze.  </h3>
+    <article class="container-fluid" id="invitation">
+        <section class="invite ">
+            <section class="amenity col-sm-offset-1 col-xs-12 col-sm-10 col-md-offset-2 col-md-8">
+                <h3 class="amenity-text"><span>Podaj swój adres e-mail, aby otrzymać szczegółowe informacje o premierze naszej aplikacji.</span> </h3>
 
-            <form>
+                <form class="form-horizontal hidden-xs" >
+                    <div class="col-xs-offset-2 col-xs-7 ">
+                        <label class="sr-only" for="email-address">E-mail</label>
+                        <input type="email" id="email-address" class="form-control " autocomplete="off" placeholder="Adres e-mail" name="email"/>
+                    </div>
 
-                <input type="email" placeholder="adres email" name="email"/>
-                <input type="submit" value="wyślij"/>
+                    <div class=" col-sm-1">
+                        <button type="submit" class="btn btn-mode btn-default font-style ">Wyślij</button>
+                    </div>
+                </form>
+                <form>
+                    <div class="visible-xs-block col-xs-offset-1 col-xs-10">
+                        <label class="sr-only" for="xs-email-input">E-mail</label>
+                        <div class="input-group">
+                            <input type="email" class="form-control " id="xs-email-input"  autocomplete="off" placeholder="Adres e-mail" name="email">
 
-            </form>
-        </div>
+                            <span class="input-group-btn">
+                                <button class="btn btn-default btn-mode " type="submit">
+                                    <span class="glyphicon glyphicon-ok glyphicon-font-size" aria-hidden="true">
+                                    </span>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </section>
     </article>
+
+    <!--<article class="invite container-fluid" id="invitation">-->
+        <!--<section class="invite ">-->
+            <!--<div class=" col-xs-offset-1 col-xs-9 col-sm-7">-->
+                <!--<section class="amenity">-->
+                    <!--<h3 class="amenity-text">Podaj swój adres e-mail, aby otrzymać szczegółowe informacje o premierze naszej aplikacji. </h3>-->
+                <!--</section>-->
+            <!--</div>-->
+            <!--<section>-->
+                <!--<form class="form-horizontal" >-->
+                    <!--<div class="form-grup">-->
+                        <!--<div class="col-xs-offset-1 col-sm-offset-2 col-xs-7 col-sm-4">-->
+                            <!--<input type="email" class="form-control " autocomplete="off" placeholder="adres e-mail" name="email"/>-->
+                        <!--</div>-->
+                        <!--<div class="col-xs-2 email-btn ">-->
+                            <!--<button type="submit" class="btn btn-mode btn-default">wyślij</button>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</form>-->
+            <!--</section>-->
+        <!--</section>-->
+    <!--</article>-->
 
     <article id="functionlist" class="functionlist">
 

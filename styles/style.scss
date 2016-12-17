@@ -40,13 +40,19 @@ nav ul a{
 p, span, a, li {
   font-family: 'Roboto', sans-serif;  }
 
+input[type="email"],
+button.font-style {
+  font-family: 'Roboto', sans-serif;
+  font-size: 115%;
+}
+
 main {
   @include dimension;
   margin-right: auto;
   margin-left: auto;
   min-height: 100%;
   background-color: rgba(255, 255, 255, 0.9);
-  filter: alpha( opacity=90); //for IE
+  filter: alpha( opacity=90); /*for IE */
 }
 
 .empty {
@@ -141,71 +147,54 @@ html {
   }
 }
 /*----------------- Invitation -----------------*/
-article.invite  {
-  padding-bottom: 10vh;
-  padding-top: 10vh;
-  background: none;
+article#invitation  {
+  padding-left: 0;}
+
+section.invite {
+  background:none;
+  padding: 28% 0 50%;
 }
 
-div.invite {
-  margin: 20% auto;
-  border-radius: 5px;
-  padding: 5%;
-  min-height: 100px;
-  width: 60%;
-  min-width: 200px;
-  text-align: center;
+section.amenity {
   background-color: #6ccba1;
   @include invite(10px 10px 21px 1px rgba(105,147,128,0.8));
+  display: inline-block;
+  padding-bottom: 5%;
+  border-radius: 12px;
+}
+
+h3.amenity-text {
+  color: #000000;
+  margin-top: 10px;
+  padding:3%;
+  font-size: 133%;
+  text-align: center;
 }
 
 input[type="email"] {
-  width: 66%;
-  min-width: 180px;
-  color: #666;
-  background-color: #f2f2f2;
-  border: 2px solid #e0e0e0;
-  border-radius: 5px;
-  font-size: 140%;
-  padding: 1%;
-  margin-top: 2vw;
+  background-color: #f6f6f5;
+  border: 1px solid #8d8d8d;
+  text-align: center;}
+
+button[type="submit"] {
+  background-color: #e9d6c3;
+  border: 1px solid #8d8d8d; }
+
+.btn-mode:focus,
+input[type="email"]:focus {
+  border: 1px #666666;
+  background-color: #fff3e8;
+  @include email-input(0 0 15px 1px rgba(102, 102, 102, 0.8));
   outline: none; }
 
-input[type="email"]:focus {
-  border: 2px solid #b2d4b2;
-  background-color: #e9f3f9;
-  @include email-input(0 0 15px 1px rgba(105,147,128,0.8)); }
-
-input[type="submit"] {
-  min-width: 180px;
-  color: #f8f8f8;
-  background-color: #5470b1;
-  font-size: 140%;
-  margin-top: 2vh;
-  margin-bottom: 2vh;
-  padding: 1%;
-  letter-spacing: 2px;
-  border-radius: 5px;
-  cursor: pointer;
-  outline: none;
-  line-height: 1.42857143;}
-
-input[type="submit"]:hover {
-  background-color: #2e61d7; }
-
-input[type="submit"]:focus {
-  @include  submit-input(0 0 15px 1px rgba(84,112,177,0.8)); }
-
-@media (max-width: 570px) {
-  h3 {
-    font-size:16px;
+@media screen and (min-width: 769px) {
+  h3.amenity-text {
+    font-size: 152%;
   }
-  input[type="submit"] {
-    font-size: 105%;
-  }
-  input[type="email"] {
-    font-size: 105%;
-    text-align: center;
+}
+@media screen and (max-width: 550px){
+  section.invite {
+    margin-bottom: 28%;
   }
 }
 
