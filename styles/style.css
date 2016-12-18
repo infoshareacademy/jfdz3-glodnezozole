@@ -98,7 +98,6 @@ html {
   .navbar-default .navbar-nav > li > a {
     font-size: 150%;
     padding: 5% 0; } }
-
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
   background: none;
   border-bottom: 3px solid #2d3d62;
@@ -226,6 +225,11 @@ section.team {
   border-radius: 50%;
   width: 35%;
   background: none; }
+
+/*-------------Social------------*/
+.social {
+  width: 100%;
+  text-align: center; }
 
 /*-------------Rules------------*/
 #rules, #privacy_policy {
