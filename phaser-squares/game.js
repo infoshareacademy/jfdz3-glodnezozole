@@ -104,24 +104,25 @@ function update() {
 }
 //place enemies
 function createEnemies() {
-	for (var x = 0; x<2; x++) {
+	for (var x = 0; x<1; x++) {
 		for (var y = 0; y<3; y++) {
-			var enemy = enemies.create(x*700,y*150, 'enemy')
-			enemy.anchor.setTo(-1, 0.5)
+			var enemy = enemies.create(x*700,y*200, 'enemy')
+			enemy.anchor.setTo(Math.random(), Math.random())
 		}
 	}
 
-	enemies.x = 100;
-	enemies.y =50;
+	enemies.x = 2000;
+	enemies.y = 80;
 //move enemies up and down
-	var tween = game.add.tween(enemies).to({y:500},1800, Phaser.Easing.Linear.None, true, 0, 1000, true);
+// 	var tween = game.add.tween(enemies).to({x:1500},1800, Phaser.Easing.Linear.None, true,0, 1000, true);
+	var tween = game.add.tween(enemies).to({ x: -10 }, 3000, 'Linear', true, 0).loop();
+	// tween.onLoop.add(descend, this);
 
-	tween.onLoop.add(descend,this);
 }
 
-function descend(){
-	enemies.y += 10;
-}
+// function descend(){
+// 	createEnemies()
+// }
 
 function  collisionHandler(player, enemy) {
 	player.kill();
