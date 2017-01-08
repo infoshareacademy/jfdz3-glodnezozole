@@ -14,22 +14,24 @@ $('.navbar-nav a').click(function () {
 
 $(function () {
 
-    var trailerPosition = $('#trailer').offset().top;
-    var invitationPosition = $('#invitation').offset().top;
-    var functionlistPosition = $('#functionlist').offset().top;
-    var dreamTeamPosition = $('#dream_team').offset().top;
+    var siteTitles = [];
+    var newTitle = ".swapp";
+
+    $('.navbar-nav a').each(function () {
+        siteTitles.push({
+            "position": $($(this).attr('href')).offset().top-150,
+            "title": $(this).attr('data-siteTitle')
+        });
+    });
 
     $(window).scroll(function () {
-        if ($(this).scrollTop() >= trailerPosition-100 && $(this).scrollTop() < invitationPosition-100) {
-            $('title').text('Zajawka!');
-        } else if ($(this).scrollTop() >= invitationPosition-100 && $(this).scrollTop() < functionlistPosition-100) {
-            $('title').text('Zapraszamy');
-        } else if ($(this).scrollTop() >= functionlistPosition-100 && $(this).scrollTop() < dreamTeamPosition-100) {
-            $('title').text('Funkcje');
-        } else if ($(this).scrollTop() >= dreamTeamPosition-100) {
-            $('title').text('O nas');
-        } else {
-            $('title').text('.swapp');
-        }
+        siteTitles.forEach(function (siteTitle) {
+            if ($(window).scrollTop() > siteTitle.position) {
+                newTitle = siteTitle.title;
+            }
+        });
+
+        $('title').text(newTitle);
+
     });
 });
