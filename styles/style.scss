@@ -171,6 +171,11 @@ h3.amenity-text {
   text-align: center;
 }
 
+//span.botText {
+//  text-align: center;
+//}
+
+.botInput,
 input[type="email"] {
   background-color: #f6f6f5;
   border: 1px solid #8d8d8d;
@@ -179,6 +184,7 @@ input[type="email"] {
 button[type="submit"] {
   background-color: #e9d6c3;
   border: 1px solid #8d8d8d; }
+
 
 .btn-mode:focus,
 input[type="email"]:focus {

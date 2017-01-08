@@ -69,17 +69,19 @@
             <section class="amenity col-sm-offset-1 col-xs-12 col-sm-10 col-md-offset-2 col-md-8">
                 <h3 class="amenity-text"><span>Podaj swój adres e-mail, aby otrzymać szczegółowe informacje o premierze naszej aplikacji.</span> </h3>
 
-                <form class="form-horizontal hidden-xs" >
-                    <div class="col-xs-offset-2 col-xs-7 ">
-                        <label class="sr-only" for="email-address">E-mail</label>
-                        <input type="email" id="email-address" class="form-control " autocomplete="off" placeholder="Adres e-mail" name="email"/>
+
+                <form name="mailsend" onsubmit="return antibot2()"  >
+                    <div class="form-horizontal hidden-xs">
+                        <div class="col-xs-offset-2 col-xs-7 ">
+                            <label class="sr-only" for="email-address">E-mail</label>
+                            <input type="email" id="email-address" class="form-control " autocomplete="off" placeholder="Adres e-mail" name="email"/>
+                        </div>
+
+                        <div class=" col-sm-1">
+                            <button type="submit" class="btn btn-mode btn-default font-style ">Wyślij</button>
+                        </div>
                     </div>
 
-                    <div class=" col-sm-1">
-                        <button type="submit" class="btn btn-mode btn-default font-style ">Wyślij</button>
-                    </div>
-                </form>
-                <form>
                     <div class="visible-xs-block col-xs-offset-1 col-xs-10">
                         <label class="sr-only" for="xs-email-input">E-mail</label>
                         <div class="input-group">
@@ -93,6 +95,13 @@
                             </span>
                         </div>
                     </div>
+                   <div class="BotSection">  <!--div do ukrycia antibota-->
+                       <div class="clearfix"></div>
+                    <h3 class="amenity-text"><span> Aby wysłać formularz rozwiąż działanie</span></h3>
+                    <div class="col-xs-offset-4 col-xs-4 " >
+                        <input type="text" class="btn-mode form-control botInput"  autocomplete="off" placeholder="3+2=?" name="antibot">
+                    </div>
+                   </div>
                 </form>
             </section>
         </section>
