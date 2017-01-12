@@ -11,9 +11,21 @@ $('.navbar-nav a').click(function () {
 
 /* Invitation */
 
+// losowość zabezpieczenia antybot
+var randomTab = [Math.floor(Math.random()*10)+1, Math.floor(Math.random()*10)+1];
+
+$ ('input[name=antibot]').attr("placeholder", (randomTab[0] + "+" + randomTab[1] + "=" + "?"));
+
+var RandomValue = randomTab[0] + randomTab[1];
+
 function antibot2 (event) {
-
-    return document.forms.mailsend.antibot.value=='5';
+    return document.forms.mailsend.antibot.value == RandomValue;
 }
+// ukrywanie/pokazywanie antybota
 
-//////
+$ ('div.BotSection').hide();
+
+$ ('input[name=email]').focus(function () {
+    $('div.BotSection').show();
+});
+
