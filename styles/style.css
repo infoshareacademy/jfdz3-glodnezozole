@@ -157,6 +157,7 @@ h3.amenity-text {
   font-size: 133%;
   text-align: center; }
 
+.botInput,
 input[type="email"] {
   background-color: #f6f6f5;
   border: 1px solid #8d8d8d;
@@ -229,7 +230,14 @@ section.team {
 /*-------------Social------------*/
 .social {
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  padding: 1% 0 1% 0; }
+
+.linkedin, .facebook, .twitter {
+  padding: 1% 0 1% 0; }
+
+.social img {
+  max-width: 20px; }
 
 /*-------------Rules------------*/
 #rules, #privacy_policy {
