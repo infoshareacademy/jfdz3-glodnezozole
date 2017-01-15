@@ -58,4 +58,14 @@ $(document).ready(function () {
     });
 });
 
-///
+/* Responsiwny pasek menu */
+
+$(document).on('scroll',function () {
+   if ($(this).scrollTop()>738) {
+       console.log("dodaj");
+    }
+    else if ($(this).scrollTop()<737){
+
+        console.log("odejmij")
+    }
+        });
