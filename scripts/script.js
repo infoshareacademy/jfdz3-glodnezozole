@@ -54,7 +54,7 @@ $(document).ready(function () {
     // ukrywanie/pokazywanie antybota
     $ ('section.BotSection').hide();
     $ ('input[name=email]').focus(function () {
-        $('section.BotSection').show();
+        $('section.BotSection').slideDown(300);
     });
 });
 
