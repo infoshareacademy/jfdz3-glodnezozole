@@ -13,9 +13,9 @@ $('.navbar-nav a').click(function (e) {
 
 // zmienny tytuł strony
 
+    var siteTitles = [];
 $(function () {
 
-    var siteTitles = [];
     var newTitle = ".swapp";
 
     $('.navbar-nav a').each(function () {
@@ -26,11 +26,16 @@ $(function () {
     });
 
     $(window).scroll(function () {
+        var scrollTop = $(window).scrollTop;
         siteTitles.forEach(function (siteTitle) {
-            if ($(window).scrollTop() > siteTitle.position) {
+            if (scrollTop > siteTitle.position) {
                 newTitle = siteTitle.title;
             }
         });
+
+        if( scrollTop > siteTitles[0].position ){
+            changeMenuSize()
+        }
 
         $('title').text(newTitle);
 
@@ -48,6 +53,14 @@ $(function () {
     var randomTab = [Math.floor(Math.random()*10)+1, Math.floor(Math.random()*10)+1];
     var RandomValue = randomTab[0] + randomTab[1];
 
+var $zmiennaA, $zmiennaB, $zmiennaB2, $zmiennaC;
+
+function changeMenuSize(padding, height, margin, font){
+    $('.nav>li>a').css('padding', $zmiennaA * padding);
+    $('.navbar-brand > img').css({'height': $zmiennaB * height, 'margin': $zmiennaB2 * margin});
+    $('Body').css('font-size', $zmiennaC * font);
+}
+
 $(document).ready(function () {
 
     $ ('input[name=antibot]').attr("placeholder", (randomTab[0] + "+" + randomTab[1] + "=" + "?"));
@@ -58,19 +71,24 @@ $(document).ready(function () {
         $('section.BotSection').show();
     });
 
+    $zmiennaA = $('.nav>li>a').css('padding'),  //TODO: nadać prawidłowe nazwy zmiennym
+        $zmiennaB = $('.navbar-brand img').css('height'),
+        $zmiennaB2 = $('.navbar-brand img').css('margin'),
+        $zmiennaC = $('Body').css('font-size');
+    $zmiennaA = parseInt($zmiennaA);
+    $zmiennaB = parseInt($zmiennaB);
+    $zmiennaB2 = parseInt($zmiennaB2);
+    $zmiennaC = parseInt($zmiennaC);
+
     /* Responsiwny pasek menu */
 
     // /*uzależnienie wystąpienia od roździelczośći*/
     // $(window).resize(function(){
     //     if ($('header').width() <= 1200 ){
 
-            var $zmiennaA = $('.nav>li>a').css('padding'),  //TODO: nadać prawidłowe nazwy zmiennym
-                $zmiennaB = $('.navbar-brand img').css('height'),
-                $zmiennaC = $('Body').css('font-size'),
-                $grupka = [$zmiennaA, $zmiennaB, $zmiennaC ];
 
     // }
-    $(window).load(function () {
+    // $(window).load(function () {
                                                     //skopiowac ponizsze elementy a na wskazanej pozycji je podmienić
         //     $('span.pq').each(function() {
         //         var quote=$(this).clone();
@@ -79,14 +97,11 @@ $(document).ready(function () {
         //         $(this).before(quote);
         //     }); // Koniec funkcji each.
 
-    $zmiennaA = parseInt($zmiennaA, 10);
-        $zmiennaB = parseInt($zmiennaB, 10);
-    // $zmiennaC = parseInt($zmiennaC, 10);
 
-    $('.nav>li>a').css('padding', $zmiennaA * 2);
-    $('.navbar-brand > img').css({'height': $zmiennaB * 1.1, 'margin': $zmiennaB * 0.01});
-    $('Body').css('font-size', $zmiennaB * 0.4);
-});
+   changeMenuSize(2, 1.1, 0.01, 1.5);
+// });
+
+
 
     //
     // $(document) .scroll(function () {
