@@ -64,26 +64,52 @@ $(document).ready(function () {
     // $(window).resize(function(){
     //     if ($('header').width() <= 1200 ){
 
-            var zmiennaA = $('.nav>li>a').css('padding'),  //TODO: nadać prawidłowe nazwy zmiennym
-                zmiennaB = $('.navbar-brand img').css('height'),
-                zmiennaC = $('Body').css('font-size');
+            var $zmiennaA = $('.nav>li>a').css('padding'),  //TODO: nadać prawidłowe nazwy zmiennym
+                $zmiennaB = $('.navbar-brand img').css('height'),
+                $zmiennaC = $('Body').css('font-size'),
+                $grupka = [$zmiennaA, $zmiennaB, $zmiennaC ];
 
-            // function testujacaPolozenieScrolla() {
-            var test = {position : $(document).offset().top-150};
+    // }
+    $(window).load(function () {
+                                                    //skopiowac ponizsze elementy a na wskazanej pozycji je podmienić
+        //     $('span.pq').each(function() {
+        //         var quote=$(this).clone();
+        //         quote.removeClass('pq');
+        //         quote.addClass('pullquote');
+        //         $(this).before(quote);
+        //     }); // Koniec funkcji each.
+
+    $zmiennaA = parseInt($zmiennaA, 10);
+        $zmiennaB = parseInt($zmiennaB, 10);
+    // $zmiennaC = parseInt($zmiennaC, 10);
+
+    $('.nav>li>a').css('padding', $zmiennaA * 2);
+    $('.navbar-brand > img').css({'height': $zmiennaB * 1.1, 'margin': $zmiennaB * 0.01});
+    $('Body').css('font-size', $zmiennaB * 0.4);
+});
+
+    //
+    // $(document) .scroll(function () {
+    //     if ($(this).scrollTop()>700) {
+    // //     if ($(this).scrollTop()>738) {
+    // //    console.log("dodaj");
+    //         $('.nav>li>a').css('padding', zmiennaA / 2);
+    //         $('.navbar-brand > img').css({'height': zmiennaB / 1.1, 'margin': zmiennaB / 0.01});
+    //         $('Body').css('font-size', zmiennaC / 0.4);
+    //     }
+    // });
 
 
-            // }
-            $(window).load(function () {
-            zmiennaA = parseInt(zmiennaA,10);
-            zmiennaB = parseInt(zmiennaB,10);
-            zmiennaC = parseInt(zmiennaB,10);
 
-            $('.nav>li>a').css('padding',zmiennaA * 2);
-            $('.navbar-brand > img').css({'height': zmiennaB * 1.1 , 'margin' : zmiennaB * 0.01 });
-            $('Body').css('font-size',zmiennaC * 0.4);
-            });
+       //
+//    //  }
+    // $('.nabar-nav a').scroll(function () {
+    //     if  ($(this).scroll()>offset().top) {
+    //         console.log("dodaj");
 
-        // }   /// Nie działa :/
+
+
+    // }   /// Nie działa :/
     // }); //koniec f.resize
 
 }); // koniec f.ready
