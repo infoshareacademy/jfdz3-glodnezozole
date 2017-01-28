@@ -12,9 +12,10 @@
     <script src="vendors/jquery/jquery-2.2.1.min.js" type="text/javascript" charset="utf-8"></script>
     <!-- http://getbootstrap.com/components/ -->
     <script src="vendors/bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="scripts/script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 <header>
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -32,10 +33,10 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#trailer">Start</a></li>
-                    <li><a href="#invitation">Subskrybuj</a></li>
-                    <li><a href="#functionlist">Funkcje</a></li>
-                    <li><a href="#dream_team">Autorzy</a></li>
+                    <li><a href="#trailer" data-siteTitle="Zajawka!">Start</a></li>
+                    <li><a href="#invitation" data-siteTitle="Zapisz się">Subskrybuj</a></li>
+                    <li><a href="#functionlist" data-siteTitle="Poznaj funkcje">Funkcje</a></li>
+                    <li><a href="#dream_team" data-siteTitle="O nas">Autorzy</a></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
@@ -63,18 +64,47 @@
         </section>
     </article>
 
-    <article class="invite" id="invitation">
-        <div class="invite">
-            <h3>Wpisz w poniższym polu swój adres mailowy,
-                aby otrzymać od nas informacje o nadchodzącej premierze.  </h3>
+    <article class="container-fluid" id="invitation">
+        <section class="invite ">
+            <section class="amenity col-sm-offset-1 col-xs-12 col-sm-10 col-md-offset-2 col-md-8">
+                <h3 class="amenity-text"><span>Podaj swój adres e-mail, aby otrzymać szczegółowe informacje o premierze naszej aplikacji.</span> </h3>
 
-            <form>
 
-                <input type="email" placeholder="adres email" name="email"/>
-                <input type="submit" value="wyślij"/>
+                <form name="mailsend" onsubmit="return antibot2()"  >
+                    <div class="form-horizontal hidden-xs">
+                        <div class="col-xs-offset-2 col-xs-7 ">
+                            <label class="sr-only" for="email-address">E-mail</label>
+                            <input type="email" id="email-address" class="form-control " autocomplete="off" placeholder="Adres e-mail" name="email"/>
+                        </div>
 
-            </form>
-        </div>
+                        <div class=" col-sm-1">
+                            <button type="submit" class="btn btn-mode btn-default font-style ">Wyślij</button>
+                        </div>
+                    </div>
+
+                    <div class="visible-xs-block col-xs-offset-1 col-xs-10">
+                        <label class="sr-only" for="xs-email-input">E-mail</label>
+                        <div class="input-group">
+                            <input type="email" class="form-control " id="xs-email-input"  autocomplete="off" placeholder="Adres e-mail" name="email">
+
+                            <span class="input-group-btn">
+                                <button class="btn btn-default btn-mode " type="submit">
+                                    <span class="glyphicon glyphicon-ok glyphicon-font-size" aria-hidden="true">
+                                    </span>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <section class="BotSection">
+                    <h3 class="amenity-text"><span> Aby wysłać formularz rozwiąż działanie</span></h3>
+                    <div class="col-xs-offset-4 col-xs-4 " >
+                        <input type="text" class="btn-mode form-control botInput"  autocomplete="off" placeholder="" name="antibot" id="antibot">
+                    </div>
+                  </section>
+                </form>
+            </section>
+        </section>
     </article>
 
     <article id="functionlist" class="functionlist">
@@ -116,27 +146,30 @@
 
     </article>
     <article class="team container-fluid" id="dream_team">
-        <section class="team col-xs-12 col-sm-6">
-            <img class="img-team" src="img/marcin.jpg" alt="zdjęcie"/>
-            <h2>Marcin Pasiewicz</h2>
-            <h4>"Everything looks fine at my end."</h4>
-        </section>
-        <section class="team col-xs-12 col-sm-6">
-            <img class="img-team" src="img/adrian.png" alt="zdjęcie"/>
-            <h2>Adrian Lippa</h2>
-            <h4>"It works for me."</h4>
-        </section>
-        <section class="team col-xs-12 col-sm-6">
-            <img class="img-team" src="img/paula.png" alt="zdjęcie"/>
-            <h2>Paula Tomaszewska</h2>
-            <h4>"I didn't create that part of the program."</h4>
-        </section>
-        <section class="team col-xs-12 col-sm-6">
-            <img class="img-team" src="img/bartek.jpg" alt="zdjęcie"/>
-            <h2>Bartosz Śledziński</h2>
-            <h4>"The only easy day was yesterday."</h4>
-        </section>
-
+        <div class="row">
+            <section class="team col-xs-12 col-sm-6">
+                <img class="img-team" src="img/marcin.jpg" alt="zdjęcie"/>
+                <h2>Marcin Pasiewicz</h2>
+                <h4>"Everything looks fine at my end."</h4>
+            </section>
+            <section class="team col-xs-12 col-sm-6">
+                <img class="img-team" src="img/adrian.png" alt="zdjęcie"/>
+                <h2>Adrian Lippa</h2>
+                <h4>"It works for me."</h4>
+            </section>
+        </div>
+        <div class="row">
+            <section class="team col-xs-12 col-sm-6">
+                <img class="img-team" src="img/paula.png" alt="zdjęcie"/>
+                <h2>Paula Tomaszewska</h2>
+                <h4>"I didn't create that part of the program."</h4>
+            </section>
+            <section class="team col-xs-12 col-sm-6">
+                <img class="img-team" src="img/bartek.jpg" alt="zdjęcie"/>
+                <h2>Bartosz Śledziński</h2>
+                <h4>"The only easy day was yesterday."</h4>
+            </section>
+        </div>
     </article>
 
 </main>
@@ -280,6 +313,29 @@
 </section>
 
 <footer class="container-fluid">
+    <article class="social container">
+        <div>
+            <h5>Znajdź nas!</h5>
+            <section class="facebook col-xs-4">
+                <a href="http://www.facebook.com/" target="_blank">
+                    <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
+                </a>
+                <h7>Facebook</h7>
+            </section>
+            <section class="twitter col-xs-4">
+                <a href="https://twitter.com/" target="_blank">
+                    <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
+                </a>
+                <h7>Twitter</h7>
+            </section>
+            <section class="linkedin col-xs-4">
+                <a href="http://www.linkedin.com" target="_blank">
+                    <img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" />
+                </a>
+                <h7>LinkedIn</h7>
+            </section>
+        </div>
+    </article>
     <span class="footer col-xs-12 col-sm-4">&copy; 2016 Głodne Zozole</span>
     <a class="footer col-xs-12 col-sm-4" href="#rules">Regulamin</a>
     <a class="footer col-xs-12 col-sm-4" href="#privacy_policy">Polityka prywatności</a>

@@ -34,6 +34,11 @@ nav ul a {
 p, span, a, li {
   font-family: 'Roboto', sans-serif; }
 
+input[type="email"],
+button.font-style {
+  font-family: 'Roboto', sans-serif;
+  font-size: 115%; }
+
 main {
   width: 90%;
   max-width: 1000px;
@@ -41,7 +46,8 @@ main {
   margin-left: auto;
   min-height: 100%;
   background-color: rgba(255, 255, 255, 0.9);
-  filter: alpha(opacity=90); }
+  filter: alpha(opacity=90);
+  /*for IE */ }
 
 .empty {
   clear: both; }
@@ -128,75 +134,54 @@ html {
   section.teaser h2 {
     text-align: center; } }
 /*----------------- Invitation -----------------*/
-article.invite {
-  padding-bottom: 10vh;
-  padding-top: 10vh;
-  background: none; }
+article#invitation {
+  padding-left: 0; }
 
-div.invite {
-  margin: 20% auto;
-  border-radius: 5px;
-  padding: 5%;
-  min-height: 100px;
-  width: 60%;
-  min-width: 200px;
-  text-align: center;
+section.invite {
+  background: none;
+  padding: 28% 0 50%; }
+
+section.amenity {
   background-color: #6ccba1;
   -webkit-box-shadow: 10px 10px 21px 1px rgba(105, 147, 128, 0.8);
   -moz-box-shadow: 10px 10px 21px 1px rgba(105, 147, 128, 0.8);
-  box-shadow: 10px 10px 21px 1px rgba(105, 147, 128, 0.8); }
+  box-shadow: 10px 10px 21px 1px rgba(105, 147, 128, 0.8);
+  display: inline-block;
+  padding-bottom: 5%;
+  border-radius: 12px; }
 
+h3.amenity-text {
+  color: #000000;
+  margin-top: 10px;
+  padding: 3%;
+  font-size: 133%;
+  text-align: center; }
+
+.botInput,
 input[type="email"] {
-  width: 66%;
-  min-width: 180px;
-  color: #666;
-  background-color: #f2f2f2;
-  border: 2px solid #e0e0e0;
-  border-radius: 5px;
-  font-size: 140%;
-  padding: 1%;
-  margin-top: 2vw;
+  background-color: #f6f6f5;
+  border: 1px solid #8d8d8d;
+  text-align: center; }
+
+button[type="submit"] {
+  background-color: #e9d6c3;
+  border: 1px solid #8d8d8d; }
+
+.btn-mode:focus,
+input[type="email"]:focus {
+  border: 1px #666666;
+  background-color: #fff3e8;
+  -webkit-box-shadow: 0 0 15px 1px rgba(102, 102, 102, 0.8);
+  -moz-box-shadow: 0 0 15px 1px rgba(102, 102, 102, 0.8);
+  box-shadow: 0 0 15px 1px rgba(102, 102, 102, 0.8);
   outline: none; }
 
-input[type="email"]:focus {
-  border: 2px solid #b2d4b2;
-  background-color: #e9f3f9;
-  -webkit-box-shadow: 0 0 15px 1px rgba(105, 147, 128, 0.8);
-  -moz-box-shadow: 0 0 15px 1px rgba(105, 147, 128, 0.8);
-  box-shadow: 0 0 15px 1px rgba(105, 147, 128, 0.8); }
-
-input[type="submit"] {
-  min-width: 180px;
-  color: #f8f8f8;
-  background-color: #5470b1;
-  font-size: 140%;
-  margin-top: 2vh;
-  margin-bottom: 2vh;
-  padding: 1%;
-  letter-spacing: 2px;
-  border-radius: 5px;
-  cursor: pointer;
-  outline: none;
-  line-height: 1.42857143; }
-
-input[type="submit"]:hover {
-  background-color: #2e61d7; }
-
-input[type="submit"]:focus {
-  -webkit-box-shadow: 0 0 15px 1px rgba(84, 112, 177, 0.8);
-  -moz-box-shadow: 0 0 15px 1px rgba(84, 112, 177, 0.8);
-  box-shadow: 0 0 15px 1px rgba(84, 112, 177, 0.8); }
-
-@media (max-width: 570px) {
-  h3 {
-    font-size: 16px; }
-
-  input[type="submit"] {
-    font-size: 105%; }
-
-  input[type="email"] {
-    font-size: 105%;
-    text-align: center; } }
+@media screen and (min-width: 769px) {
+  h3.amenity-text {
+    font-size: 152%; } }
+@media screen and (max-width: 550px) {
+  section.invite {
+    margin-bottom: 28%; } }
 /*-------------Function List --------- */
 article.functionlist {
   padding-top: 3%;
@@ -241,6 +226,24 @@ section.team {
   border-radius: 50%;
   width: 35%;
   background: none; }
+
+/*-------------Social------------*/
+.social {
+  width: 100%;
+  text-align: center;
+  padding: 1% 0 1% 0; }
+
+.linkedin, .facebook, .twitter {
+  padding: 1% 0 1% 0; }
+
+.social img {
+  max-width: 20px; }
+
+.linkedin, .facebook, .twitter {
+  padding: 0.5% 0 0.5% 0; }
+
+.social img {
+  max-width: 20px; }
 
 /*-------------Rules------------*/
 #rules, #privacy_policy {
