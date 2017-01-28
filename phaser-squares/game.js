@@ -8,7 +8,7 @@ var game = new Phaser.Game(width, height, Phaser.AUTO, null, {preload: preload, 
 var player;
 var food;
 var cursors;
-var speed = 200;
+var speed = 500;
 var score = 0;
 var scoreText;
 var background;
@@ -102,12 +102,14 @@ function update() {
 	score++;
 	scoreText.text = score;
 }
+var enemiesArr = [];
 //place enemies
 function createEnemies() {
 	for (var x = 0; x<1; x++) {
-		for (var y = 0; y<3; y++) {
-			var enemy = enemies.create(x*700,y*200, 'enemy')
+		for (var y = 0; y<Math.ceil(Math.random()*15); y++) {
+			var enemy = enemies.create(x*700,y*200, 'enemy');
 			enemy.anchor.setTo(Math.random(), Math.random())
+			enemiesArr.push(enemy);
 		}
 	}
 
@@ -115,8 +117,10 @@ function createEnemies() {
 	enemies.y = 80;
 //move enemies up and down
 // 	var tween = game.add.tween(enemies).to({x:1500},1800, Phaser.Easing.Linear.None, true,0, 1000, true);
-	var tween = game.add.tween(enemies).to({ x: -10 }, 3000, 'Linear', true, 0).loop();
-	// tween.onLoop.add(descend, this);
+	var tween = game.add.tween(enemies).to({ x: -10 }, 3000, 'Linear', true, 0).onComplete.add(function(){enemiesArr.forEach(function (e) {
+		e.destroy();
+    }); createEnemies(); } );
+	// tween.onLoop.add(createEnemies, this);
 
 }
 
