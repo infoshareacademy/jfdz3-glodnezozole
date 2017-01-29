@@ -36,14 +36,14 @@ $(function () {
 
         // TODO: TU WSTAWIE AKCJE SCROLLA + coś zrobić z tym
         if( scrollTop < siteTitles[0].position ){
-            $('.navbar-brand img').addClass('druga');
-            $('.nav>li>a').addClass('pierwsza');
+            $('.navbar-brand img').addClass('imgModyfication');
+            $('.nav>li>a').addClass('linkModyfication');
 
         }
         else {
             // changeMenuSize(2, 1.1, 0.01, 1.5);
-            $('.nav>li>a').removeClass('pierwsza');
-            $('.navbar-brand img').removeClass('druga');
+            $('.nav>li>a').removeClass('linkModyfication');
+            $('.navbar-brand img').removeClass('imgModyfication');
         }
 
         $('title').text(newTitle);

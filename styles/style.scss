@@ -68,14 +68,14 @@ html {
 /*----------------- Navigate -----------------*/
 @media screen and (min-width:993px) {
   //header .nav>li>a{
-  .pierwsza {
-  padding: 30px !important;
+  .nav>li>a.linkModyfication {
+  padding: 30px ;
   font-size:21px;
   }
 
-  .druga{
-  height: 53px !important;
-  margin: -1px !important;
+  .navbar-brand>img.imgModyfication{
+  height: 53px ;
+  margin: -1px ;
   }
   //.trzecia{
   //  font-size:21px;
