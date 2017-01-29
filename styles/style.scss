@@ -14,10 +14,6 @@ html, body {
   background: none;
 
 }
-#scrollChange {
-
-}
-
 
 @media screen and (max-width:768px) {
   h1, h2 {
@@ -70,6 +66,21 @@ html {
   background-size: contain;
 }
 /*----------------- Navigate -----------------*/
+@media screen and (min-width:993px) {
+  //header .nav>li>a{
+  .pierwsza {
+  padding: 30px !important;
+  font-size:21px;
+  }
+
+  .druga{
+  height: 53px !important;
+  margin: -1px !important;
+  }
+  //.trzecia{
+  //  font-size:21px;
+  //}
+}
 .navbar-default {
   background-color: $bar_bg;
   border: none;
