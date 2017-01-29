@@ -4,7 +4,7 @@ window.addEventListener('keyup', (e) => {
 pressed.push(e.key);
 pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length);
 if(pressed.join('').includes(secretCode)){
-	pigGame()
+    pigGame()
 }
 });
 
@@ -149,6 +149,7 @@ function createEnemies() {
 
     function  collisionHandler(player, enemy) {
 	player.kill();
-	alert("Game Over! Your score is " +score)
+	// alert("Game Over! Your score is " +score);
+		$('canvas').remove();
 }
 }

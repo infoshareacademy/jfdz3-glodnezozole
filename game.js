@@ -150,5 +150,7 @@ function createEnemies() {
     function  collisionHandler(player, enemy) {
 	player.kill();
 	alert("Game Over! Your score is " +score)
-}
+        $('canvas').remove();
+
+    }
 }
