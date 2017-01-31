@@ -67,19 +67,16 @@ html {
 }
 /*----------------- Navigate -----------------*/
 @media screen and (min-width:993px) {
-  //header .nav>li>a{
-  .nav>li>a.linkModyfication {
+  .nav>li>a.linkMod {
   padding: 30px ;
   font-size:21px;
   }
 
-  .navbar-brand>img.imgModyfication{
+  .navbar-brand>img.imgMod{
   height: 53px ;
   margin: -1px ;
   }
-  //.trzecia{
-  //  font-size:21px;
-  //}
+
 }
 .navbar-default {
   background-color: $bar_bg;
