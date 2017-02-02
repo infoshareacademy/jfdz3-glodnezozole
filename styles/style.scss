@@ -143,6 +143,12 @@ html {
     max-width: 200px;
     width: 100%;
   }
+  section.teaser img:hover {
+    max-width: 220px;
+    width: 110%;
+    transition: all 1s ease;
+
+  }
   section.teaser h2 {
     text-align: center;
   }
