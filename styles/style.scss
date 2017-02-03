@@ -12,9 +12,7 @@ html, body {
   border: 0;
   height: 100%;
   background: none;
-
 }
-
 @media screen and (max-width:768px) {
   h1, h2 {
     margin: 0;
@@ -68,15 +66,16 @@ html {
 /*----------------- Navigate -----------------*/
 @media screen and (min-width:993px) {
   .nav>li>a.linkMod {
-  padding: 23px 30px ;
-  font-size: 20px;
+    padding: 21px 27px ;
+    //font-size: 20px;
+    font-size: 18px;
+    transition: all 0.3s;
   }
-
-  .navbar-brand>img.imgMod{
-  height: 53px ;
-  margin: -7px ;
+  .navbar-brand>img.imgMod {
+    height: 50px;
+    margin: -10px;
+    transition: all 0.3s;
   }
-
 }
 .navbar-default {
   background-color: $bar_bg;
@@ -104,6 +103,12 @@ html {
 .navbar-brand>img {
   height: 48px;
   margin: -15px;
+  transition: all 0.3s;
+}
+.nav>li>a.linkNormal {
+  padding: 15px ;
+  font-size: 14px;
+  transition: all 0.3s;
 }
 .navbar-default .navbar-toggle .icon-bar {
   background-color: $A_logo;

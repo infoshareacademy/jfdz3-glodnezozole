@@ -33,11 +33,15 @@ $(function () {
         });
         //modyfikacja gabarytu paska nawigacji
         if( scrollTop < siteTitles[0].position ){
+             $('.navbar-brand img').removeClass('imgNormal');
             $('.navbar-brand img').addClass('imgMod');
-            $('.nav>li>a').addClass('linkMod');
-        }else {
+            $('.nav>li>a').removeClass('linkNormal');
+            $('.nav>li>a').addClass('linkMod'); // zrób grube
+                 }else {
             $('.nav>li>a').removeClass('linkMod');
+            $('.nav>li>a').addClass('linkNormal');
             $('.navbar-brand img').removeClass('imgMod');
+            $('.navbar-brand img').addClass('imgNormal');
         }
         $('title').text(newTitle);
     });
