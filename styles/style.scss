@@ -59,7 +59,7 @@ main {
   clear: both; }
   /*----------------- Background -----------------*/
 html {
-  background: url(../img/miasto2.svg) no-repeat center center fixed;
+  background: url(../img/miasto.svg) no-repeat center center fixed;
   -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;
@@ -144,8 +144,7 @@ html {
     width: 100%;
   }
   section.teaser img:hover {
-    max-width: 220px;
-    width: 110%;
+    zoom: 110%
     transition: all 1s ease;
 
   }
