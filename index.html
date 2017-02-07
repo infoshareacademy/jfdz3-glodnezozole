@@ -178,10 +178,19 @@
 </main>
 <div class="empty"></div>
 <section id="rules">
-    <div class="cross_btn">
-    <a class="rules" href="#team">
-        <span class="glyphicon glyphicon-remove"></span>
-    </a>
+    <!--<div class="cross_btn">-->
+    <!--&lt;!&ndash;<a class="rules" href="#team">&ndash;&gt;    TO JEST X-->
+        <!--<span class="glyphicon glyphicon-remove"></span>-->
+    <!--&lt;!&ndash;</a>&ndash;&gt;         DO TEGO MIEJSCA JEST X-->
+    <div class="modal fade" id="rulesModal" tabindex="-1" role="dialog" aria-labelledby="rulesModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="rulesModalLabel">Regulamin</h4>
+                </div>
+                <div class="modal-body">
+    <!--POWYŻEJ MODAL-->
     <ol class="rules">
         <li>Postanowienia ogólne
             <ol>
@@ -283,7 +292,16 @@
             </ol>
         </li>
     </ol>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
     </div>
+
+
+    <!--</div>-->
 </section>
 <section id="privacy_policy">
     <div class="cross_btn">
@@ -340,7 +358,7 @@
         </div>
     </article>
     <span class="footer col-xs-12 col-sm-4">&copy; 2016 Głodne Zozole</span>
-    <a class="footer col-xs-12 col-sm-4" href="#rules">Regulamin</a>
+    <a class="footer col-xs-12 col-sm-4" href="#rulesModal" data-toggle="modal" >Regulamin</a>
     <a class="footer col-xs-12 col-sm-4" href="#privacy_policy">Polityka prywatności</a>
 </footer>
 </body>

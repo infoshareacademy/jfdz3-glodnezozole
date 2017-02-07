@@ -293,47 +293,50 @@ section.team {
 }
 
 /*-------------Rules------------*/
-#rules, #privacy_policy{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.8);
-  overflow: scroll;
+//#rules, #privacy_policy{
+//  position: fixed;
+//  top: 0;
+//  left: 0;
+//  width: 100%;
+//  height: 100%;
+//  background: rgba(0,0,0,0.8);
+//  overflow: scroll;
+//}
+//
+//ol.rules {
+//  padding: 5%;
+//  width: 70%;
+//  background: #fff;
+//  text-align: justify;
+//  margin:  8% auto;
+//
+//}
+.modal-title{
+  text-align: center; // dodatkowo paddingi w modalu zrobić aby nie było przyklejone do prawej
 }
+//
+//section#rules > ol {
+//  list-style-type: upper-roman;
+//}
 
-ol.rules {
-  padding: 5%;
-  width: 70%;
-  background: #fff;
-  text-align: justify;
-  margin:  8% auto;
+//.cross_btn {
+//  position: relative;
+//}
+//a.rules {
+//  position: absolute;
+//  top: 2%;
+//  right: 16%;
+//}
 
-}
-
-section#rules > ol {
-  list-style-type: upper-roman;
-}
-
-.cross_btn {
-  position: relative;
-}
-a.rules {
-  position: absolute;
-  top: 2%;
-  right: 16%;
-}
-
-#privacy_policy:not(:target), #rules:not(:target) {
-  visibility: hidden;
-  opacity: 0;
-}
-#privacy_policy:target, #rules:target {
-  visibility: visible;
-  opacity: 1;
-  transition: opacity 1s, visibility 1s;
-}
+//#privacy_policy:not(:target), #rules:not(:target) {
+//  visibility: hidden;
+//  opacity: 0;
+//}
+//#privacy_policy:target, #rules:target {
+//  visibility: visible;
+//  opacity: 1;
+//  transition: opacity 1s, visibility 1s;
+//}
 /*-------------Footer------------*/
 
 footer {
