@@ -301,6 +301,11 @@ ol.rules {
 .modal-title{
   text-align: center;
 }
+.badOutline,
+.badOutline:focus {
+  outline: none;
+}
+
 /*-------------Footer------------*/
 
 footer {
