@@ -96,8 +96,7 @@ html {
 
 @media screen and (max-width: 768px) {
   .navbar-default .navbar-nav > li > a {
-    font-size: 150%;
-    padding: 5% 0; } }
+    font-size: 150%; } }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
   background: none;
   border-bottom: 3px solid #2d3d62;
@@ -132,8 +131,7 @@ html {
     width: 100%; }
 
   section.teaser img:hover {
-    max-width: 220px;
-    width: 110%;
+    zoom: 110%;
     transition: all 1s ease; }
 
   section.teaser h2 {

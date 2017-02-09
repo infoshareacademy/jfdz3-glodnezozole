@@ -12,8 +12,9 @@ html, body {
   border: 0;
   height: 100%;
   background: none;
-
 }
+
+
 
 @media screen and (max-width:768px) {
   h1, h2 {
@@ -103,7 +104,6 @@ html {
 @media screen and (max-width:768px){
   .navbar-default .navbar-nav>li>a {
     font-size: 150%;
-    padding: 5% 0;
   }
 }
 
@@ -144,7 +144,7 @@ html {
     width: 100%;
   }
   section.teaser img:hover {
-    zoom: 110%
+    zoom: 110%;
     transition: all 1s ease;
 
   }
