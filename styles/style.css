@@ -6,10 +6,13 @@
 */
 html, body {
   margin: 0;
-  padding: 0;
+  padding: 0 !important;
   border: 0;
   height: 100%;
   background: none; }
+
+.modal-open {
+  overflow-y: scroll; }
 
 canvas {
   position: fixed;
