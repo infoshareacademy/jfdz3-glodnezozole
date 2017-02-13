@@ -322,6 +322,11 @@ section.team {
 }
 
 /*-------------Rules------------*/
+.modal-body {
+  max-height: calc(100vh - 210px);
+  overflow-y: auto;
+}
+
 ol.rules {
   padding: 2% 5%;
   text-align: justify;
