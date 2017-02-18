@@ -34,7 +34,6 @@ canvas {
     padding: 0;
   }
 }
-
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Raleway', sans-serif;
   font-weight: normal;
@@ -76,12 +75,10 @@ html {
   -o-background-size: contain;
   background-size: contain;
 }
-
 /*----------------- Navigate -----------------*/
 @media screen and (min-width: 993px) {
   .nav > li > a.linkMod {
     padding: 21px 27px;
-    //font-size: 20px;
     font-size: 18px;
     transition: all 0.3s;
   }
@@ -98,7 +95,6 @@ html {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
 }
-
 .navbar-default:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
@@ -144,7 +140,6 @@ html {
 @media screen and (max-width: 768px) {
   .navbar-default .navbar-nav > li > a {
     font-size: 150%;
-    padding: 5% 0;
   }
 }
 
@@ -173,7 +168,7 @@ html {
 
 @media screen and (min-width: 769px) {
   article.teaser {
-    margin-top: 80%;
+    margin-top: 110%;
     padding-top: 15%;
   }
   section.teaser {
@@ -184,6 +179,11 @@ html {
   section.teaser img {
     max-width: 200px;
     width: 100%;
+  }
+  section.teaser img:hover {
+    zoom: 110%;
+    transition: all 1s ease;
+
   }
   section.teaser h2 {
     text-align: center;
