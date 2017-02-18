@@ -30,6 +30,7 @@
         .mouse-arrow {
             animation: mousemove 1s ease infinite;
             animation-iteration-count: 5;
+            -moz-transform-origin: 50% 50%;
         }
         @keyframes mymove {
             0% {
