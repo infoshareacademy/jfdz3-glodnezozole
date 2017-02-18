@@ -18,6 +18,7 @@
         .clock {
             transform-origin: 25% 80%;
             animation: clockmove 7s linear infinite;
+			-moz-transform-origin: 25% 80%;
         }
 
         .mouse {
