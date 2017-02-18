@@ -52,10 +52,10 @@ $B_logo: #2d3d62;
   -moz-box-shadow: $email;
   box-shadow: $email;
 }
-@mixin submit-input($submit)
-{  -webkit-box-shadow: $submit;
-  -moz-box-shadow: $submit;
-  box-shadow: $submit;
-}
+//@mixin submit-input($submit)
+//{  -webkit-box-shadow: $submit;
+//  -moz-box-shadow: $submit;
+//  box-shadow: $submit;
+//}
 
 //*-------------Team------------*/
