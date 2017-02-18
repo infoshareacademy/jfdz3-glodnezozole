@@ -9,11 +9,11 @@
 	.flower {
             animation: flowermove 2s linear infinite;
 			transform-origin: 50% 100%;
-			-moz-transform-origin: 50% 100%;
+			-moz-transform-origin: 28% 48%;
 	}	.flower2 {
             animation: flowermove 1s linear infinite;
 			transform-origin: 50% 100%;
-			-moz-transform-origin: 50% 100%;;
+			-moz-transform-origin: 63% 35%;
 	}
         @keyframes flowermove {
         0% {
