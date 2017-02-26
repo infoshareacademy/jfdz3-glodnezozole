@@ -54,19 +54,19 @@ $(function () {
         $('section.BotSection').slideDown(300);
     });
 
-    // wymagania wypełnienia inputa
+    // // wymagania wypełnienia inputa
+    //
+    // {
+    //     if ($(window).width() > 500) {
+    //     $('#xs-email-input').removeAttr('required');
+    //     $('#email-address').attr("required",'required');
+    // }
+    //
+    // else {
+    //     $('#xs-email-input').attr('required','required');
+    //     $('#email-address').removeAttr("required");
+    // }
 
-    $(window).resize(function() {
-        if ($(window).width() > 500) {
-        $('#xs-email-input').removeAttr('required');
-        $('#email-address').attr("required",'required');
-    }
-
-    else {
-        $('#xs-email-input').attr('required','required');
-        $('#email-address').removeAttr("required");
-    }
-    });
 
 }); // end of document ready
 
