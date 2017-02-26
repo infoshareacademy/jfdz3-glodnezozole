@@ -22,6 +22,21 @@ $(function () {
             "title": $(this).attr('data-siteTitle')
         });
     });
+    var handleMediaChange = function(mediaQueryList) {
+        if (mediaQueryList.matches) {
+            // The browser window is at least 768px wide
+        } else {
+            $('.nav a').on('click', function(){
+                $('.navbar-toggle').click() //bootstrap 3.x by Richard
+                e.preventDefault();
+            });
+            // The browser window is less than 768px wide
+        }
+    }
+
+    var match = window.matchMedia("(min-width: 850px)");
+    match.addListener(handleMediaChange);
+
 
     $(window).scroll(function () {
 

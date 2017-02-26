@@ -76,6 +76,9 @@ html {
     height: 50px;
     margin: -10px;
     transition: all 0.3s; } }
+.nav {
+  overflow: hidden; }
+
 .navbar-default {
   background-color: #42BA85;
   border: none;

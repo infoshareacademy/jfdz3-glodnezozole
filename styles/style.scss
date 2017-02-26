@@ -88,7 +88,9 @@ html {
     transition: all 0.3s;
   }
 }
-
+.nav {
+  overflow: hidden;
+}
 .navbar-default {
   background-color: $bar_bg;
   border: none;
