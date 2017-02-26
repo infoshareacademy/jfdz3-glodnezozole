@@ -161,7 +161,5 @@ function pigGame() {
         alert("Game Over! Your score is " + score)
         game.destroy();
         $('canvas').remove();
-        window.location.reload()
-
     }
 }
