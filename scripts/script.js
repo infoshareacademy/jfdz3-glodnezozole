@@ -22,21 +22,6 @@ $(function () {
             "title": $(this).attr('data-siteTitle')
         });
     });
-    var handleMediaChange = function(mediaQueryList) {
-        if (mediaQueryList.matches) {
-            // The browser window is at least 768px wide
-        } else {
-            $('.nav a').on('click', function(){
-                $('.navbar-toggle').click() //bootstrap 3.x by Richard
-                e.preventDefault();
-            });
-            // The browser window is less than 768px wide
-        }
-    }
-
-    var match = window.matchMedia("(min-width: 850px)");
-    match.addListener(handleMediaChange);
-
 
     $(window).scroll(function () {
 
@@ -80,3 +65,12 @@ function antibot2(event) {
 // losowość zabezpieczenia antybot
 var randomTab = [Math.floor(Math.random() * 10) + 1, Math.floor(Math.random() * 10) + 1];
 var RandomValue = randomTab[0] + randomTab[1];
+
+//menu chowa się na klik na mobile
+$(function () {
+    if ($(window).width() < 768) {
+        $('nav a').click(function () {
+            $('#bs-example-navbar-collapse-1').removeClass('in')
+        });
+    }
+});
