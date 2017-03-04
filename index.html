@@ -94,14 +94,18 @@
             <!---->
                                 <!--<div class="visible-xs-block col-xs-offset-1 col-xs-10">-->
                                 <div class="col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10 col-xs-offset-1 col-xs-10">
-                                    <label class="sr-only" for="xs-email-input">E-mail</label>
+                                    <label class="sr-only" for="email-input">E-mail</label>
                                     <div class="input-group">
-                                        <input type="email" class="form-control " id="xs-email-input"  autocomplete="off" placeholder="Adres e-mail" name="email" required="required">
+                                        <input type="email" class="form-control " id="email-input"  autocomplete="off" placeholder="Adres e-mail" name="email" value="" required="required">
 
                             <span class="input-group-btn">
                                 <button id="btn-margin-style" class="btn btn-default btn-mode " type="submit">
-                                    <span class="glyphicon glyphicon-ok glyphicon-font-size" aria-hidden="true">
-                                    </span>
+                                    <div class="visible-xs-block">
+                                        <span class="glyphicon glyphicon-ok glyphicon-font-size" aria-hidden="true">
+                                        </span>
+                                    </div>
+                                    <div class="hidden-xs"> Wyślij
+                                    </div>
                                 </button>
                             </span>
                         </div>
@@ -114,7 +118,7 @@
                     <section class="BotSection">
                         <h3 class="amenity-text"><span> Aby wysłać formularz rozwiąż działanie</span></h3>
                         <div class="col-xs-offset-3 col-xs-5 ">
-                            <input type="text" class="btn-mode form-control botInput" autocomplete="off" placeholder="" name="antibot" id="antibot" required="required">
+                            <input type="text" class="btn-mode form-control botInput" autocomplete="off" placeholder="" name="antibot" id="antibot" required="required" data-toggle="botTooltip" data-placement="bottom" title="">
                         </div>
                     </section>
                 </form>

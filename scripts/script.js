@@ -47,27 +47,64 @@ $(function () {
     });
 
     //matematyka dla zadania z antybota
-    $('input[name=antibot]').attr("placeholder", (randomTab[0] + "+" + randomTab[1] + "=" + "?"));
+        var aBot = (randomTab[0] + "+" + randomTab[1] + "=" + "?");
+    $('input[name=antibot]').attr({
+        "placeholder": aBot,
+        "title": aBot
+    });
+
     // ukrywanie/pokazywanie antybota
     $('section.BotSection').hide();
     $('input[name=email]').focus(function () {
         $('section.BotSection').slideDown(300);
     });
 
-    // // wymagania wypełnienia inputa
-    //
-    // {
-    //     if ($(window).width() > 500) {
-    //     $('#xs-email-input').removeAttr('required');
-    //     $('#email-address').attr("required",'required');
-    // }
-    //
-    // else {
-    //     $('#xs-email-input').attr('required','required');
-    //     $('#email-address').removeAttr("required");
-    // }
+    $('[data-toggle="botTooltip"]').tooltip();
+
+    var botAnalysisIdInterval;
+
+    function colorChange() {
+        botAnalysisIdInterval = setInterval(borderColorChange, 500);
+    }
+
+    $("input[name=antibot]").click(colorChange);
+
+    function borderColorChange() {
+
+        if ((document.forms.mailsend.antibot.value) !==  RandomValue)
+        {
+                $("input[name=antibot]").focus(function () {
+                $(this).addClass("wrongAnswer");
+
+                console.log("test a");
+
+                });
+            // $("input[name=antibot]").trigger("focus");
+            // $(window).trigger("focus");
+
+        }
+        else
+        {
+            $("input[name=antibot]").focus(function () {
+                $(this).removeClass("wrongAnswer");
+                
+                console.log("test b");
+                
+            });
+            // $(window).trigger("focus");
+        }
+    }
+
+    function stopInterval (){
+        clearInterval(botAnalysisIdInterval);
+    }
 
 
+// zatrzymanie intervalu jest konieczne? Jezeli formularz zostanie wysłany to strona sie odswiezy i samo powinno zniknąć ?
+// czemu dopiero za 2 - 3 razem się koloruje
+    // czemu nie akceptuje poprawnego wpisania znaków
+    
+ 
 }); // end of document ready
 
 /* Invitation */
