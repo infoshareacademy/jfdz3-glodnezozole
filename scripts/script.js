@@ -64,33 +64,30 @@ $(function () {
     var botAnalysisIdInterval;
 
     function colorChange() {
-        botAnalysisIdInterval = setInterval(borderColorChange, 500);
+        borderColorChange();
     }
 
-    $("input[name=antibot]").click(colorChange);
+    $("input[name=antibot]").keyup(colorChange);
+
+
+    //     NADPISAC FOCUS 
+
+
 
     function borderColorChange() {
-
-        if ((document.forms.mailsend.antibot.value) !==  RandomValue)
+        console.log('-----')
+        if ( parseInt(document.forms.mailsend.antibot.value) !==  RandomValue)
         {
-                $("input[name=antibot]").focus(function () {
-                $(this).addClass("wrongAnswer");
+                $("input[name=antibot]").addClass("wrongAnswer");
 
-                console.log("test a");
-
-                });
-            // $("input[name=antibot]").trigger("focus");
-            // $(window).trigger("focus");
 
         }
         else
         {
-            $("input[name=antibot]").focus(function () {
-                $(this).removeClass("wrongAnswer");
+            $("input[name=antibot]").removeClass("wrongAnswer");
                 
                 console.log("test b");
-                
-            });
+
             // $(window).trigger("focus");
         }
     }
