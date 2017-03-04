@@ -1,11 +1,11 @@
 @import 'scss/_scss.scss';
 
-/*Kolory
-#42BA85
-#000000
-#ffffff
-#394e7d
-*/
+///*Kolory
+//#42BA85
+//#000000
+//#ffffff
+//#394e7d
+//*/
 html, body {
   margin: 0;
   padding: 0 !important;
@@ -88,7 +88,9 @@ html {
     transition: all 0.3s;
   }
 }
-
+.nav {
+  overflow: hidden;
+}
 .navbar-default {
   background-color: $bar_bg;
   border: none;
@@ -104,12 +106,11 @@ html {
 }
 
 .navbar-default .navbar-toggle {
-  border: none;
+  border-color: #394e7d;
 }
 
-.navbar-toggle {
-  margin-top: 3px;
-  margin-bottom: 0;
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background: none;
 }
 
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {

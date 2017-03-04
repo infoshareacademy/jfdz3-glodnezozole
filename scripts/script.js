@@ -90,3 +90,12 @@ function antibot2(event) {
 // losowość zabezpieczenia antybot
 var randomTab = [Math.floor(Math.random() * 10) + 1, Math.floor(Math.random() * 10) + 1];
 var RandomValue = randomTab[0] + randomTab[1];
+
+//menu chowa się na klik na mobile
+$(function () {
+    if ($(window).width() < 768) {
+        $('nav a').click(function () {
+            $('#bs-example-navbar-collapse-1').removeClass('in')
+        });
+    }
+});
