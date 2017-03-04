@@ -241,8 +241,9 @@ input[type="email"]:focus {
   outline: none;
 }
 
-.wrongAnswer{
-  border: red 1px solid;
+input.wrongAnswer,
+input.wrongAnswer:focus {
+  border: red 2px solid;
 }
 
 @media screen and (min-width: 769px) {

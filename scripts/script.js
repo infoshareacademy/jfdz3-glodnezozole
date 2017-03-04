@@ -59,9 +59,8 @@ $(function () {
         $('section.BotSection').slideDown(300);
     });
 
+    // Podpowiedz dla zadania Antybot i zabarwienie ramki
     $('[data-toggle="botTooltip"]').tooltip();
-
-    var botAnalysisIdInterval;
 
     function colorChange() {
         borderColorChange();
@@ -69,39 +68,17 @@ $(function () {
 
     $("input[name=antibot]").keyup(colorChange);
 
-
-    //     NADPISAC FOCUS 
-
-
-
     function borderColorChange() {
-        console.log('-----')
         if ( parseInt(document.forms.mailsend.antibot.value) !==  RandomValue)
         {
                 $("input[name=antibot]").addClass("wrongAnswer");
-
-
         }
         else
         {
             $("input[name=antibot]").removeClass("wrongAnswer");
-                
-                console.log("test b");
-
-            // $(window).trigger("focus");
         }
     }
 
-    function stopInterval (){
-        clearInterval(botAnalysisIdInterval);
-    }
-
-
-// zatrzymanie intervalu jest konieczne? Jezeli formularz zostanie wysłany to strona sie odswiezy i samo powinno zniknąć ?
-// czemu dopiero za 2 - 3 razem się koloruje
-    // czemu nie akceptuje poprawnego wpisania znaków
-    
- 
 }); // end of document ready
 
 /* Invitation */
