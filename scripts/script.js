@@ -47,14 +47,39 @@ $(function () {
     });
 
     //matematyka dla zadania z antybota
-    $('input[name=antibot]').attr("placeholder", (randomTab[0] + "+" + randomTab[1] + "=" + "?"));
+        var aBot = (randomTab[0] + "+" + randomTab[1] + "=" + "?");
+    $('input[name=antibot]').attr({
+        "placeholder": aBot,
+        "title": aBot
+    });
+
     // ukrywanie/pokazywanie antybota
     $('section.BotSection').hide();
     $('input[name=email]').focus(function () {
         $('section.BotSection').slideDown(300);
     });
 
-});
+    // Podpowiedz dla zadania Antybot i zabarwienie ramki
+    $('[data-toggle="botTooltip"]').tooltip();
+
+    function colorChange() {
+        borderColorChange();
+    }
+
+    $("input[name=antibot]").keyup(colorChange);
+
+    function borderColorChange() {
+        if ( parseInt(document.forms.mailsend.antibot.value) !==  RandomValue)
+        {
+                $("input[name=antibot]").addClass("wrongAnswer");
+        }
+        else
+        {
+            $("input[name=antibot]").removeClass("wrongAnswer");
+        }
+    }
+
+}); // end of document ready
 
 /* Invitation */
 

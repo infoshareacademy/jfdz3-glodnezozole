@@ -201,6 +201,11 @@ section.invite {
   padding: 28% 0 50%;
 }
 
+@media screen and (min-width: 768px){
+#btn-margin-style{
+  margin-left: 20px;
+}}
+
 section.amenity {
   background-color: #6ccba1;
   @include invite(10px 10px 21px 1px rgba(105, 147, 128, 0.8));
@@ -235,6 +240,11 @@ input[type="email"]:focus {
   background-color: #fff3e8;
   @include email-input(0 0 15px 1px rgba(102, 102, 102, 0.8));
   outline: none;
+}
+
+input.wrongAnswer,
+input.wrongAnswer:focus {
+  border: red 2px solid;
 }
 
 @media screen and (min-width: 769px) {
