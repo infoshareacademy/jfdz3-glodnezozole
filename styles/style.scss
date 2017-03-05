@@ -1,11 +1,11 @@
 @import 'scss/_scss.scss';
 
-/*Kolory
-#42BA85
-#000000
-#ffffff
-#394e7d
-*/
+///*Kolory
+//#42BA85
+//#000000
+//#ffffff
+//#394e7d
+//*/
 html, body {
   margin: 0;
   padding: 0 !important;
@@ -106,12 +106,11 @@ html {
 }
 
 .navbar-default .navbar-toggle {
-  border: none;
+  border-color: #394e7d;
 }
 
-.navbar-toggle {
-  margin-top: 3px;
-  margin-bottom: 0;
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background: none;
 }
 
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
@@ -202,6 +201,11 @@ section.invite {
   padding: 28% 0 50%;
 }
 
+@media screen and (min-width: 768px){
+#btn-margin-style{
+  margin-left: 20px;
+}}
+
 section.amenity {
   background-color: #6ccba1;
   @include invite(10px 10px 21px 1px rgba(105, 147, 128, 0.8));
@@ -236,6 +240,11 @@ input[type="email"]:focus {
   background-color: #fff3e8;
   @include email-input(0 0 15px 1px rgba(102, 102, 102, 0.8));
   outline: none;
+}
+
+input.wrongAnswer,
+input.wrongAnswer:focus {
+  border: red 2px solid;
 }
 
 @media screen and (min-width: 769px) {

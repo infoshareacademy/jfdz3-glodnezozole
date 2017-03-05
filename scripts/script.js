@@ -22,21 +22,6 @@ $(function () {
             "title": $(this).attr('data-siteTitle')
         });
     });
-    var handleMediaChange = function(mediaQueryList) {
-        if (mediaQueryList.matches) {
-            // The browser window is at least 768px wide
-        } else {
-            $('.nav a').on('click', function(){
-                $('.navbar-toggle').click() //bootstrap 3.x by Richard
-                e.preventDefault();
-            });
-            // The browser window is less than 768px wide
-        }
-    }
-
-    var match = window.matchMedia("(min-width: 850px)");
-    match.addListener(handleMediaChange);
-
 
     $(window).scroll(function () {
 
@@ -62,14 +47,39 @@ $(function () {
     });
 
     //matematyka dla zadania z antybota
-    $('input[name=antibot]').attr("placeholder", (randomTab[0] + "+" + randomTab[1] + "=" + "?"));
+        var aBot = (randomTab[0] + "+" + randomTab[1] + "=" + "?");
+    $('input[name=antibot]').attr({
+        "placeholder": aBot,
+        "title": aBot
+    });
+
     // ukrywanie/pokazywanie antybota
     $('section.BotSection').hide();
     $('input[name=email]').focus(function () {
         $('section.BotSection').slideDown(300);
     });
 
-});
+    // Podpowiedz dla zadania Antybot i zabarwienie ramki
+    $('[data-toggle="botTooltip"]').tooltip();
+
+    function colorChange() {
+        borderColorChange();
+    }
+
+    $("input[name=antibot]").keyup(colorChange);
+
+    function borderColorChange() {
+        if ( parseInt(document.forms.mailsend.antibot.value) !==  RandomValue)
+        {
+                $("input[name=antibot]").addClass("wrongAnswer");
+        }
+        else
+        {
+            $("input[name=antibot]").removeClass("wrongAnswer");
+        }
+    }
+
+}); // end of document ready
 
 /* Invitation */
 
@@ -80,3 +90,12 @@ function antibot2(event) {
 // losowość zabezpieczenia antybot
 var randomTab = [Math.floor(Math.random() * 10) + 1, Math.floor(Math.random() * 10) + 1];
 var RandomValue = randomTab[0] + randomTab[1];
+
+//menu chowa się na klik na mobile
+$(function () {
+    if ($(window).width() < 768) {
+        $('nav a').click(function () {
+            $('#bs-example-navbar-collapse-1').removeClass('in')
+        });
+    }
+});
